@@ -1,4 +1,4 @@
-﻿
+
 -- Sequence administrative.dispute_nr_seq --
 DROP SEQUENCE IF EXISTS administrative.dispute_nr_seq;
 CREATE SEQUENCE administrative.dispute_nr_seq
@@ -400,7 +400,7 @@ insert into system.approle_appgroup (approle_code, appgroup_id) VALUES('DisputeV
     
  -- Data for the table administrative.dispute_category -- 
 delete from administrative.dispute_category;
-insert into administrative.dispute_category(code, display_value, description, status) values('regularization', 'SLTR', '', 'c');
+insert into administrative.dispute_category(code, display_value, description, status) values('regularization', 'SR', '', 'c');
     
  -- Data for the table administrative.dispute_status -- 
 insert into administrative.dispute_status(code, display_value, description, status) values('pending', 'Pending', '', 'c');
