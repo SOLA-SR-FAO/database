@@ -32,9 +32,6 @@ UPDATE cadastre.hierarchy_level set display_value = 'Public Display Area' where 
 UPDATE system.config_map_layer  set title = 'Public Display Area' where name = 'sug_section';
 UPDATE system.map_search_option set title = 'Public Display Area' where CODE = 'SECTION';
 
-
-UPDATE cadastre.spatial_unit_group set hierarchy_level = 5 where hierarchy_level=4;
-
 -- DROP VIEW cadastre.dwu;
 
 CREATE OR REPLACE VIEW cadastre.dwu AS 

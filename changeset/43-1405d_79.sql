@@ -94,7 +94,7 @@ COMMENT ON FUNCTION cadastre.get_new_cadastre_object_identifier_last_part(
 ) IS 'This function generates the last part of the cadastre object identifier.
 It has to be overridden to apply the algorithm specific to the situation.';
 
---cadastre-object-check-name for NIGERIA UPI Standard
+--cadastre-object-check-name for UPI Standard
 
 CREATE OR REPLACE FUNCTION cadastre.cadastre_object_name_is_valid(name_firstpart character varying, name_lastpart character varying)
   RETURNS boolean AS
