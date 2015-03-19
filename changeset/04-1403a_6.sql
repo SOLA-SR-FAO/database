@@ -58,20 +58,25 @@ CREATE TRIGGER add_srwu AFTER INSERT
    ON cadastre.spatial_unit_group FOR EACH ROW
   EXECUTE PROCEDURE cadastre.f_for_tbl_spatial_unit_group_trg_new();
 
-------
--- SECTION==> WORK UNIT labels
-------
-UPDATE cadastre.hierarchy_level SET  display_value = 'Work Unit'  WHERE code = '4';
 
-UPDATE system.config_map_layer  SET  title = 'Work Unit' WHERE name = 'sug_section';
+CREATE TRIGGER __track_changes BEFORE INSERT OR UPDATE ON cadastre.sr_work_unit FOR EACH ROW EXECUTE PROCEDURE public.f_for_trg_track_changes();
 
-UPDATE system.map_search_option SET  title = 'Work Unit' WHERE code = 'SECTION';
+
+
+------
+-- SECTION==> PDA labels
+------
+UPDATE cadastre.hierarchy_level SET  display_value = 'Public Display Area'  WHERE code = '4';
+
+UPDATE system.config_map_layer  SET  title = 'Public Display Area' WHERE name = 'sug_section';
+
+UPDATE system.map_search_option SET  title = 'Public Display Area' WHERE code = 'SECTION';
 
 
 ----------------------------------------------
 ---- update for map label
 CREATE OR REPLACE FUNCTION cadastre.get_map_center_label(center_point geometry)
 RETURNS character varying AS $BODY$ begin
-return coalesce((select 'Work Unit:' || label from cadastre.spatial_unit_group
+return coalesce((select 'Public Display Area:' || label from cadastre.spatial_unit_group
 where hierarchy_level = 4 and st_within(center_point, geom) limit 1), ''); end;
 $BODY$ LANGUAGE plpgsql;

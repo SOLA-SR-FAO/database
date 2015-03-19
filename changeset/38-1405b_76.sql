@@ -171,7 +171,7 @@ insert into system.consolidation_config values('application.application_uses_sou
 insert into system.consolidation_config values('application.application_spatial_unit_historic','application','application_spatial_unit_historic','Every record that references a record in the main table in consolidation schema.','rowidentifier in (select rowidentifier from consolidation.application_spatial_unit)','f',82);
 insert into system.consolidation_config values('address.address_historic','address','address_historic','Every record that references a record in the main table in consolidation schema.','rowidentifier in (select rowidentifier from consolidation.address)','f',83);
 
--- NIGERIA SPACIFIC TABLES  ------------
+-- SR SPACIFIC TABLES  ------------
 insert into system.consolidation_config values('administrative.dispute','administrative','dispute','Every dispute that references an application being selected for transfer.','application_id in (select id from consolidation.application)','f',84);
 insert into system.consolidation_config values('administrative.dispute_historic','administrative','dispute_historic','record that references a record in the main table in consolidation schema.','rowidentifier in (select rowidentifier from consolidation.dispute)','f',85);
 insert into system.consolidation_config values('administrative.dispute_comments','administrative','dispute_comments','Every comments that references a dispute being selected for transfer.','dispute_nr in (select nr from consolidation.dispute)','f',86);
