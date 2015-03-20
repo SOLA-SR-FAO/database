@@ -1,0 +1,4689 @@
+Starting Build at 14:19:51.00 
+the files in the folder changeset  
+select system.set_system_id('SR')  
+Creating database... 
+ALTER DATABASE
+psql:sola.sql:6: NOTICE:  schema "document" does not exist, skipping
+DROP SCHEMA
+CREATE SCHEMA
+psql:sola.sql:11: NOTICE:  schema "source" does not exist, skipping
+DROP SCHEMA
+CREATE SCHEMA
+psql:sola.sql:16: NOTICE:  schema "transaction" does not exist, skipping
+DROP SCHEMA
+CREATE SCHEMA
+psql:sola.sql:21: NOTICE:  schema "application" does not exist, skipping
+DROP SCHEMA
+CREATE SCHEMA
+psql:sola.sql:26: NOTICE:  schema "party" does not exist, skipping
+DROP SCHEMA
+CREATE SCHEMA
+psql:sola.sql:31: NOTICE:  schema "address" does not exist, skipping
+DROP SCHEMA
+CREATE SCHEMA
+psql:sola.sql:36: NOTICE:  schema "system" does not exist, skipping
+DROP SCHEMA
+CREATE SCHEMA
+psql:sola.sql:41: NOTICE:  schema "administrative" does not exist, skipping
+DROP SCHEMA
+CREATE SCHEMA
+psql:sola.sql:46: NOTICE:  schema "cadastre" does not exist, skipping
+DROP SCHEMA
+CREATE SCHEMA
+psql:sola.sql:51: NOTICE:  schema "bulk_operation" does not exist, skipping
+DROP SCHEMA
+CREATE SCHEMA
+psql:sola.sql:65: NOTICE:  sequence "document_nr_seq" does not exist, skipping
+DROP SEQUENCE
+CREATE SEQUENCE
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+psql:sola.sql:325: NOTICE:  sequence "source_la_nr_seq" does not exist, skipping
+DROP SEQUENCE
+CREATE SEQUENCE
+COMMENT
+CREATE FUNCTION
+COMMENT
+psql:sola.sql:349: NOTICE:  sequence "rrr_nr_seq" does not exist, skipping
+DROP SEQUENCE
+CREATE SEQUENCE
+COMMENT
+psql:sola.sql:360: NOTICE:  sequence "notation_reference_nr_seq" does not exist, skipping
+DROP SEQUENCE
+CREATE SEQUENCE
+COMMENT
+psql:sola.sql:371: NOTICE:  sequence "ba_unit_first_name_part_seq" does not exist, skipping
+DROP SEQUENCE
+CREATE SEQUENCE
+COMMENT
+psql:sola.sql:382: NOTICE:  sequence "ba_unit_last_name_part_seq" does not exist, skipping
+DROP SEQUENCE
+CREATE SEQUENCE
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+psql:sola.sql:2339: NOTICE:  sequence "application_nr_seq" does not exist, skipping
+DROP SEQUENCE
+CREATE SEQUENCE
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+ clean_db 
+----------
+        1
+(1 row)
+
+psql:sola.sql:2856: NOTICE:  table "document" does not exist, skipping
+DROP TABLE
+psql:sola.sql:2873: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "document_pkey" for table "document"
+psql:sola.sql:2873: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "document_nr_unique" for table "document"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:2887: NOTICE:  trigger "__track_changes" for table "document.document" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:2894: NOTICE:  table "document_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:2915: NOTICE:  trigger "__track_history" for table "document.document" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:2921: NOTICE:  table "source" does not exist, skipping
+DROP TABLE
+psql:sola.sql:2951: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "source_pkey" for table "source"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:2965: NOTICE:  trigger "__track_changes" for table "source.source" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:2972: NOTICE:  table "source_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:3007: NOTICE:  trigger "__track_history" for table "source.source" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:3013: NOTICE:  table "archive" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3026: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "archive_pkey" for table "archive"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:3040: NOTICE:  trigger "__track_changes" for table "source.archive" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:3047: NOTICE:  table "archive_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:3065: NOTICE:  trigger "__track_history" for table "source.archive" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:3071: NOTICE:  table "presentation_form_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3082: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "presentation_form_type_pkey" for table "presentation_form_type"
+psql:sola.sql:3082: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "presentation_form_type_display_value_unique" for table "presentation_form_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:3110: NOTICE:  table "availability_status_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3121: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "availability_status_type_pkey" for table "availability_status_type"
+psql:sola.sql:3121: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "availability_status_type_display_value_unique" for table "availability_status_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:3140: NOTICE:  table "administrative_source_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3152: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "administrative_source_type_pkey" for table "administrative_source_type"
+psql:sola.sql:3152: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "administrative_source_type_display_value_unique" for table "administrative_source_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:3192: NOTICE:  table "reg_status_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3203: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "reg_status_type_pkey" for table "reg_status_type"
+psql:sola.sql:3203: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "reg_status_type_display_value_unique" for table "reg_status_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:3217: NOTICE:  table "transaction" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3235: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "transaction_pkey" for table "transaction"
+psql:sola.sql:3235: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "transaction_from_service_id_unique" for table "transaction"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:3245: NOTICE:  trigger "__track_changes" for table "transaction.transaction" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:3252: NOTICE:  table "transaction_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:3274: NOTICE:  trigger "__track_history" for table "transaction.transaction" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:3280: NOTICE:  table "service" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3303: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "service_pkey" for table "service"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:3317: NOTICE:  trigger "__track_changes" for table "application.service" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:3324: NOTICE:  table "service_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:3352: NOTICE:  trigger "__track_history" for table "application.service" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+CREATE INDEX
+psql:sola.sql:3362: NOTICE:  table "application" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3396: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "application_pkey" for table "application"
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+COMMENT
+psql:sola.sql:3413: NOTICE:  trigger "__track_changes" for table "application.application" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:3420: NOTICE:  table "application_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+psql:sola.sql:3461: NOTICE:  trigger "__track_history" for table "application.application" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+CREATE INDEX
+psql:sola.sql:3471: NOTICE:  table "party" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3500: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "party_pkey" for table "party"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:3515: NOTICE:  trigger "__track_changes" for table "party.party" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:3522: NOTICE:  table "party_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:3555: NOTICE:  trigger "__track_history" for table "party.party" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:3561: NOTICE:  table "party_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3572: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "party_type_pkey" for table "party_type"
+psql:sola.sql:3572: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "party_type_display_value_unique" for table "party_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:3590: NOTICE:  table "address" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3604: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "address_pkey" for table "address"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:3618: NOTICE:  trigger "__track_changes" for table "address.address" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:3625: NOTICE:  table "address_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:3644: NOTICE:  trigger "__track_history" for table "address.address" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:3650: NOTICE:  table "communication_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3661: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "communication_type_pkey" for table "communication_type"
+psql:sola.sql:3661: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "communication_type_display_value_unique" for table "communication_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:3680: NOTICE:  table "id_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3691: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "id_type_pkey" for table "id_type"
+psql:sola.sql:3691: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "id_type_display_value_unique" for table "id_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:3708: NOTICE:  table "gender_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3719: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "gender_type_pkey" for table "gender_type"
+psql:sola.sql:3719: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "gender_type_display_value_unique" for table "gender_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:3731: NOTICE:  table "appuser" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3750: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "appuser_pkey" for table "appuser"
+psql:sola.sql:3750: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "appuser_username_unique" for table "appuser"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:3760: NOTICE:  trigger "__track_changes" for table "system.appuser" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:3767: NOTICE:  table "appuser_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:3790: NOTICE:  trigger "__track_history" for table "system.appuser" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+INSERT 0 1
+psql:sola.sql:3801: NOTICE:  table "application_action_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3813: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "application_action_type_pkey" for table "application_action_type"
+psql:sola.sql:3813: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "application_action_type_display_value_unique" for table "application_action_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:3842: NOTICE:  table "application_status_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3853: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "application_status_type_pkey" for table "application_status_type"
+psql:sola.sql:3853: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "application_status_type_display_value_unique" for table "application_status_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:3872: NOTICE:  table "request_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3892: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "request_type_pkey" for table "request_type"
+psql:sola.sql:3892: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "request_type_display_value_unique" for table "request_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:3948: NOTICE:  table "request_category_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3959: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "request_category_type_pkey" for table "request_category_type"
+psql:sola.sql:3959: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "request_category_type_display_value_unique" for table "request_category_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:3975: NOTICE:  table "rrr_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:3990: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "rrr_type_pkey" for table "rrr_type"
+psql:sola.sql:3990: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "rrr_type_display_value_unique" for table "rrr_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:4033: NOTICE:  table "rrr_group_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4044: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "rrr_group_type_pkey" for table "rrr_group_type"
+psql:sola.sql:4044: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "rrr_group_type_display_value_unique" for table "rrr_group_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:4061: NOTICE:  table "type_action" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4072: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "type_action_pkey" for table "type_action"
+psql:sola.sql:4072: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "type_action_display_value_unique" for table "type_action"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:4085: NOTICE:  table "service_status_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4096: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "service_status_type_pkey" for table "service_status_type"
+psql:sola.sql:4096: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "service_status_type_display_value_unique" for table "service_status_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:4110: NOTICE:  table "service_action_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4122: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "service_action_type_pkey" for table "service_action_type"
+psql:sola.sql:4122: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "service_action_type_display_value_unique" for table "service_action_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:4141: NOTICE:  table "transaction_status_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4152: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "transaction_status_type_pkey" for table "transaction_status_type"
+psql:sola.sql:4152: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "transaction_status_type_display_value_unique" for table "transaction_status_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:4167: NOTICE:  table "spatial_source" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4181: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "spatial_source_pkey" for table "spatial_source"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:4195: NOTICE:  trigger "__track_changes" for table "source.spatial_source" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4202: NOTICE:  table "spatial_source_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:4221: NOTICE:  trigger "__track_history" for table "source.spatial_source" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4227: NOTICE:  table "spatial_source_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4238: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "spatial_source_type_pkey" for table "spatial_source_type"
+psql:sola.sql:4238: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "spatial_source_type_display_value_unique" for table "spatial_source_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:4260: NOTICE:  table "spatial_source_measurement" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4273: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "spatial_source_measurement_pkey" for table "spatial_source_measurement"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:4287: NOTICE:  trigger "__track_changes" for table "source.spatial_source_measurement" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4294: NOTICE:  table "spatial_source_measurement_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:4312: NOTICE:  trigger "__track_history" for table "source.spatial_source_measurement" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4318: NOTICE:  table "power_of_attorney" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4332: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "power_of_attorney_pkey" for table "power_of_attorney"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:4342: NOTICE:  trigger "__track_changes" for table "source.power_of_attorney" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4349: NOTICE:  table "power_of_attorney_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:4368: NOTICE:  trigger "__track_history" for table "source.power_of_attorney" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4374: NOTICE:  table "group_party" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4387: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "group_party_pkey" for table "group_party"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:4401: NOTICE:  trigger "__track_changes" for table "party.group_party" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4408: NOTICE:  table "group_party_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:4426: NOTICE:  trigger "__track_history" for table "party.group_party" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4432: NOTICE:  table "group_party_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4443: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "group_party_type_pkey" for table "group_party_type"
+psql:sola.sql:4443: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "group_party_type_display_value_unique" for table "group_party_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:4461: NOTICE:  table "party_member" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4475: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "party_member_pkey" for table "party_member"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:4489: NOTICE:  trigger "__track_changes" for table "party.party_member" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4496: NOTICE:  table "party_member_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:4515: NOTICE:  trigger "__track_history" for table "party.party_member" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4521: NOTICE:  table "party_role" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4534: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "party_role_pkey" for table "party_role"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:4548: NOTICE:  trigger "__track_changes" for table "party.party_role" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4555: NOTICE:  table "party_role_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:4573: NOTICE:  trigger "__track_history" for table "party.party_role" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4579: NOTICE:  table "party_role_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4590: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "party_role_type_pkey" for table "party_role_type"
+psql:sola.sql:4590: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "party_role_type_display_value_unique" for table "party_role_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:4621: NOTICE:  table "ba_unit" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4641: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "ba_unit_pkey" for table "ba_unit"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:4656: NOTICE:  trigger "__track_changes" for table "administrative.ba_unit" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4663: NOTICE:  table "ba_unit_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:4688: NOTICE:  trigger "__track_history" for table "administrative.ba_unit" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4694: NOTICE:  table "ba_unit_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4705: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "ba_unit_type_pkey" for table "ba_unit_type"
+psql:sola.sql:4705: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "ba_unit_type_display_value_unique" for table "ba_unit_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:4723: NOTICE:  table "rrr" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4749: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "rrr_pkey" for table "rrr"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:4763: NOTICE:  trigger "__track_changes" for table "administrative.rrr" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4770: NOTICE:  table "rrr_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:4801: NOTICE:  trigger "__track_history" for table "administrative.rrr" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4807: NOTICE:  table "mortgage_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4818: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "mortgage_type_pkey" for table "mortgage_type"
+psql:sola.sql:4818: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "mortgage_type_display_value_unique" for table "mortgage_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:4835: NOTICE:  table "mortgage_isbased_in_rrr" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4848: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "mortgage_isbased_in_rrr_pkey" for table "mortgage_isbased_in_rrr"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:4864: NOTICE:  trigger "__track_changes" for table "administrative.mortgage_isbased_in_rrr" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4871: NOTICE:  table "mortgage_isbased_in_rrr_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:4889: NOTICE:  trigger "__track_history" for table "administrative.mortgage_isbased_in_rrr" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4895: NOTICE:  table "source_describes_rrr" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4908: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "source_describes_rrr_pkey" for table "source_describes_rrr"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:4922: NOTICE:  trigger "__track_changes" for table "administrative.source_describes_rrr" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4929: NOTICE:  table "source_describes_rrr_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:4947: NOTICE:  trigger "__track_history" for table "administrative.source_describes_rrr" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4953: NOTICE:  table "source_describes_ba_unit" does not exist, skipping
+DROP TABLE
+psql:sola.sql:4966: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "source_describes_ba_unit_pkey" for table "source_describes_ba_unit"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:4980: NOTICE:  trigger "__track_changes" for table "administrative.source_describes_ba_unit" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:4987: NOTICE:  table "source_describes_ba_unit_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:5005: NOTICE:  trigger "__track_history" for table "administrative.source_describes_ba_unit" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5011: NOTICE:  table "required_relationship_baunit" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5025: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "required_relationship_baunit_pkey" for table "required_relationship_baunit"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:5039: NOTICE:  trigger "__track_changes" for table "administrative.required_relationship_baunit" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5046: NOTICE:  table "required_relationship_baunit_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:5065: NOTICE:  trigger "__track_history" for table "administrative.required_relationship_baunit" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5071: NOTICE:  table "ba_unit_rel_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5082: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "ba_unit_rel_type_pkey" for table "ba_unit_rel_type"
+psql:sola.sql:5082: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "ba_unit_rel_type_display_value_unique" for table "ba_unit_rel_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:5094: NOTICE:  table "spatial_unit" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5121: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "spatial_unit_pkey" for table "spatial_unit"
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+COMMENT
+psql:sola.sql:5141: NOTICE:  trigger "__track_changes" for table "cadastre.spatial_unit" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5148: NOTICE:  table "spatial_unit_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+psql:sola.sql:5186: NOTICE:  trigger "__track_history" for table "cadastre.spatial_unit" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5192: NOTICE:  table "dimension_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5203: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "dimension_type_pkey" for table "dimension_type"
+psql:sola.sql:5203: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "dimension_type_display_value_unique" for table "dimension_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:5222: NOTICE:  table "surface_relation_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5233: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "surface_relation_type_pkey" for table "surface_relation_type"
+psql:sola.sql:5233: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "surface_relation_type_display_value_unique" for table "surface_relation_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:5251: NOTICE:  table "level" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5267: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "level_pkey" for table "level"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:5281: NOTICE:  trigger "__track_changes" for table "cadastre.level" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5288: NOTICE:  table "level_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:5309: NOTICE:  trigger "__track_history" for table "cadastre.level" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+INSERT 0 1
+psql:sola.sql:5320: NOTICE:  table "register_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5331: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "register_type_pkey" for table "register_type"
+psql:sola.sql:5331: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "register_type_display_value_unique" for table "register_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:5351: NOTICE:  table "structure_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5362: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "structure_type_pkey" for table "structure_type"
+psql:sola.sql:5362: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "structure_type_display_value_unique" for table "structure_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:5382: NOTICE:  table "level_content_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5393: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "level_content_type_pkey" for table "level_content_type"
+psql:sola.sql:5393: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "level_content_type_display_value_unique" for table "level_content_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:5416: NOTICE:  table "cadastre_object" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5444: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "cadastre_object_pkey" for table "cadastre_object"
+psql:sola.sql:5444: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "cadastre_object_name" for table "cadastre_object"
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+COMMENT
+psql:sola.sql:5457: NOTICE:  trigger "__track_changes" for table "cadastre.cadastre_object" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5464: NOTICE:  table "cadastre_object_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+psql:sola.sql:5499: NOTICE:  trigger "__track_history" for table "cadastre.cadastre_object" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5505: NOTICE:  table "cadastre_object_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5517: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "cadastre_object_type_pkey" for table "cadastre_object_type"
+psql:sola.sql:5517: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "cadastre_object_type_display_value_unique" for table "cadastre_object_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:5530: NOTICE:  table "building_unit_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5541: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "building_unit_type_pkey" for table "building_unit_type"
+psql:sola.sql:5541: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "building_unit_type_display_value_unique" for table "building_unit_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:5557: NOTICE:  table "ba_unit_contains_spatial_unit" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5570: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "ba_unit_contains_spatial_unit_pkey" for table "ba_unit_contains_spatial_unit"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:5585: NOTICE:  trigger "__track_changes" for table "administrative.ba_unit_contains_spatial_unit" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5592: NOTICE:  table "ba_unit_contains_spatial_unit_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:5610: NOTICE:  trigger "__track_history" for table "administrative.ba_unit_contains_spatial_unit" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5616: NOTICE:  table "ba_unit_as_party" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5624: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "ba_unit_as_party_pkey" for table "ba_unit_as_party"
+CREATE TABLE
+COMMENT
+psql:sola.sql:5634: NOTICE:  table "notation" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5653: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "notation_pkey" for table "notation"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:5663: NOTICE:  trigger "__track_changes" for table "administrative.notation" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5670: NOTICE:  table "notation_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:5694: NOTICE:  trigger "__track_history" for table "administrative.notation" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5700: NOTICE:  table "ba_unit_area" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5715: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "ba_unit_area_pkey" for table "ba_unit_area"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:5725: NOTICE:  trigger "__track_changes" for table "administrative.ba_unit_area" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5732: NOTICE:  table "ba_unit_area_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:5752: NOTICE:  trigger "__track_history" for table "administrative.ba_unit_area" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5758: NOTICE:  table "area_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5769: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "area_type_pkey" for table "area_type"
+psql:sola.sql:5769: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "area_type_display_value_unique" for table "area_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:5787: NOTICE:  table "rrr_share" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5802: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "rrr_share_pkey" for table "rrr_share"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:5814: NOTICE:  trigger "__track_changes" for table "administrative.rrr_share" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5821: NOTICE:  table "rrr_share_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:5841: NOTICE:  trigger "__track_history" for table "administrative.rrr_share" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5847: NOTICE:  table "party_for_rrr" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5861: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "party_for_rrr_pkey" for table "party_for_rrr"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:5871: NOTICE:  trigger "__track_changes" for table "administrative.party_for_rrr" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5878: NOTICE:  table "party_for_rrr_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:5897: NOTICE:  trigger "__track_history" for table "administrative.party_for_rrr" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5903: NOTICE:  table "ba_unit_target" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5916: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "ba_unit_target_pkey" for table "ba_unit_target"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:5926: NOTICE:  trigger "__track_changes" for table "administrative.ba_unit_target" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5933: NOTICE:  table "ba_unit_target_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:5951: NOTICE:  trigger "__track_history" for table "administrative.ba_unit_target" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5957: NOTICE:  table "spatial_value_area" does not exist, skipping
+DROP TABLE
+psql:sola.sql:5971: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "spatial_value_area_pkey" for table "spatial_value_area"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:5985: NOTICE:  trigger "__track_changes" for table "cadastre.spatial_value_area" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:5992: NOTICE:  table "spatial_value_area_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:6011: NOTICE:  trigger "__track_history" for table "cadastre.spatial_value_area" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6017: NOTICE:  table "spatial_unit_address" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6030: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "spatial_unit_address_pkey" for table "spatial_unit_address"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:6044: NOTICE:  trigger "__track_changes" for table "cadastre.spatial_unit_address" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6051: NOTICE:  table "spatial_unit_address_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:6069: NOTICE:  trigger "__track_history" for table "cadastre.spatial_unit_address" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6075: NOTICE:  table "spatial_unit_group" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6102: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "spatial_unit_group_pkey" for table "spatial_unit_group"
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+COMMENT
+psql:sola.sql:6122: NOTICE:  trigger "__track_changes" for table "cadastre.spatial_unit_group" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6129: NOTICE:  table "spatial_unit_group_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+psql:sola.sql:6167: NOTICE:  trigger "__track_history" for table "cadastre.spatial_unit_group" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6173: NOTICE:  table "spatial_unit_in_group" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6186: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "spatial_unit_in_group_pkey" for table "spatial_unit_in_group"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:6200: NOTICE:  trigger "__track_changes" for table "cadastre.spatial_unit_in_group" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6207: NOTICE:  table "spatial_unit_in_group_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:6225: NOTICE:  trigger "__track_history" for table "cadastre.spatial_unit_in_group" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6231: NOTICE:  table "legal_space_utility_network" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6250: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "legal_space_utility_network_pkey" for table "legal_space_utility_network"
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+COMMENT
+psql:sola.sql:6267: NOTICE:  trigger "__track_changes" for table "cadastre.legal_space_utility_network" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6274: NOTICE:  table "legal_space_utility_network_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+psql:sola.sql:6301: NOTICE:  trigger "__track_history" for table "cadastre.legal_space_utility_network" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6307: NOTICE:  table "utility_network_status_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6318: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "utility_network_status_type_pkey" for table "utility_network_status_type"
+psql:sola.sql:6318: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "utility_network_status_type_display_value_unique" for table "utility_network_status_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:6335: NOTICE:  table "utility_network_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6346: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "utility_network_type_pkey" for table "utility_network_type"
+psql:sola.sql:6346: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "utility_network_type_display_value_unique" for table "utility_network_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:6367: NOTICE:  table "cadastre_object_target" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6385: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "cadastre_object_target_pkey" for table "cadastre_object_target"
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+COMMENT
+psql:sola.sql:6398: NOTICE:  trigger "__track_changes" for table "cadastre.cadastre_object_target" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6405: NOTICE:  table "cadastre_object_target_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+psql:sola.sql:6431: NOTICE:  trigger "__track_history" for table "cadastre.cadastre_object_target" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6437: NOTICE:  table "survey_point" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6462: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "survey_point_pkey" for table "survey_point"
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+COMMENT
+psql:sola.sql:6478: NOTICE:  trigger "__track_changes" for table "cadastre.survey_point" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6485: NOTICE:  table "survey_point_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+psql:sola.sql:6521: NOTICE:  trigger "__track_history" for table "cadastre.survey_point" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6527: NOTICE:  table "transaction_source" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6540: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "transaction_source_pkey" for table "transaction_source"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:6550: NOTICE:  trigger "__track_changes" for table "transaction.transaction_source" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6557: NOTICE:  table "transaction_source_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:6575: NOTICE:  trigger "__track_history" for table "transaction.transaction_source" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6581: NOTICE:  table "cadastre_object_node_target" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6599: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "cadastre_object_node_target_pkey" for table "cadastre_object_node_target"
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+COMMENT
+psql:sola.sql:6612: NOTICE:  trigger "__track_changes" for table "cadastre.cadastre_object_node_target" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6619: NOTICE:  table "cadastre_object_node_target_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+psql:sola.sql:6645: NOTICE:  trigger "__track_history" for table "cadastre.cadastre_object_node_target" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6651: NOTICE:  table "application_property" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6673: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "application_property_pkey" for table "application_property"
+psql:sola.sql:6673: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "application_property_property_once" for table "application_property"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:6687: NOTICE:  trigger "__track_changes" for table "application.application_property" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6694: NOTICE:  table "application_property_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:6720: NOTICE:  trigger "__track_history" for table "application.application_property" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6726: NOTICE:  table "application_uses_source" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6739: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "application_uses_source_pkey" for table "application_uses_source"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:6753: NOTICE:  trigger "__track_changes" for table "application.application_uses_source" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6760: NOTICE:  table "application_uses_source_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:6778: NOTICE:  trigger "__track_history" for table "application.application_uses_source" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:6784: NOTICE:  table "request_type_requires_source_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6792: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "request_type_requires_source_type_pkey" for table "request_type_requires_source_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:6842: NOTICE:  table "setting" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6852: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "setting_pkey" for table "setting"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:6874: NOTICE:  table "appuser_setting" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6884: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "appuser_setting_pkey" for table "appuser_setting"
+CREATE TABLE
+COMMENT
+psql:sola.sql:6894: NOTICE:  table "language" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6906: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "language_pkey" for table "language"
+psql:sola.sql:6906: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "language_display_value_unique" for table "language"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:6922: NOTICE:  table "config_map_layer" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6950: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "config_map_layer_pkey" for table "config_map_layer"
+psql:sola.sql:6950: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "config_map_layer_title_unique" for table "config_map_layer"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:6971: NOTICE:  table "config_map_layer_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:6982: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "config_map_layer_type_pkey" for table "config_map_layer_type"
+psql:sola.sql:6982: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "config_map_layer_type_display_value_unique" for table "config_map_layer_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:7000: NOTICE:  table "query" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7009: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "query_pkey" for table "query"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:7040: NOTICE:  table "br" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7053: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "br_pkey" for table "br"
+psql:sola.sql:7053: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "br_display_name_unique" for table "br"
+CREATE TABLE
+COMMENT
+psql:sola.sql:7059: NOTICE:  table "br_technical_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7070: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "br_technical_type_pkey" for table "br_technical_type"
+psql:sola.sql:7070: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "br_technical_type_display_value_unique" for table "br_technical_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:7082: NOTICE:  table "br_validation" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7106: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "br_validation_pkey" for table "br_validation"
+psql:sola.sql:7106: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "br_validation_app_moment_unique" for table "br_validation"
+psql:sola.sql:7106: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "br_validation_service_moment_unique" for table "br_validation"
+psql:sola.sql:7106: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "br_validation_reg_moment_unique" for table "br_validation"
+CREATE TABLE
+COMMENT
+psql:sola.sql:7113: NOTICE:  table "br_severity_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7124: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "br_severity_type_pkey" for table "br_severity_type"
+psql:sola.sql:7124: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "br_severity_type_display_value_unique" for table "br_severity_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:7137: NOTICE:  table "br_validation_target_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7148: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "br_validation_target_type_pkey" for table "br_validation_target_type"
+psql:sola.sql:7148: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "br_validation_target_type_display_value_unique" for table "br_validation_target_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:7167: NOTICE:  table "br_definition" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7177: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "br_definition_pkey" for table "br_definition"
+CREATE TABLE
+COMMENT
+psql:sola.sql:7183: NOTICE:  table "approle" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7194: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "approle_pkey" for table "approle"
+psql:sola.sql:7194: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "approle_display_value_unique" for table "approle"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:7284: NOTICE:  table "approle_appgroup" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7292: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "approle_appgroup_pkey" for table "approle_appgroup"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:7316: NOTICE:  table "appgroup" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7326: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "appgroup_pkey" for table "appgroup"
+psql:sola.sql:7326: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "appgroup_name_unique" for table "appgroup"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+psql:sola.sql:7337: NOTICE:  table "appuser_appgroup" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7345: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "appuser_appgroup_pkey" for table "appuser_appgroup"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+psql:sola.sql:7356: NOTICE:  table "query_field" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7368: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "query_field_pkey" for table "query_field"
+psql:sola.sql:7368: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "query_field_display_value" for table "query_field"
+psql:sola.sql:7368: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "query_field_name" for table "query_field"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:7405: NOTICE:  table "map_search_option" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7419: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "map_search_option_pkey" for table "map_search_option"
+psql:sola.sql:7419: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "map_search_option_title_unique" for table "map_search_option"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:7432: NOTICE:  table "land_use_type" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7443: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "land_use_type_pkey" for table "land_use_type"
+psql:sola.sql:7443: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "land_use_type_display_value_unique" for table "land_use_type"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:7461: NOTICE:  table "spatial_unit_temporary" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7484: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "spatial_unit_temporary_pkey" for table "spatial_unit_temporary"
+CREATE TABLE
+CREATE INDEX
+CREATE INDEX
+COMMENT
+psql:sola.sql:7498: NOTICE:  trigger "__track_changes" for table "bulk_operation.spatial_unit_temporary" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:7504: NOTICE:  table "lease_condition" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7515: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "lease_condition_pkey" for table "lease_condition"
+psql:sola.sql:7515: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "lease_condition_display_value_unique" for table "lease_condition"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:sola.sql:7533: NOTICE:  table "lease_condition_for_rrr" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7548: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "lease_condition_for_rrr_pkey" for table "lease_condition_for_rrr"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:7558: NOTICE:  trigger "__track_changes" for table "administrative.lease_condition_for_rrr" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:7565: NOTICE:  table "lease_condition_for_rrr_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:7585: NOTICE:  trigger "__track_history" for table "administrative.lease_condition_for_rrr" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:7591: NOTICE:  table "application_spatial_unit" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7604: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "application_spatial_unit_pkey" for table "application_spatial_unit"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:sola.sql:7614: NOTICE:  trigger "__track_changes" for table "application.application_spatial_unit" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:7621: NOTICE:  table "application_spatial_unit_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:sola.sql:7639: NOTICE:  trigger "__track_history" for table "application.application_spatial_unit" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:sola.sql:7645: NOTICE:  table "crs" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7655: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "crs_pkey" for table "crs"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+psql:sola.sql:7668: NOTICE:  table "hierarchy_level" does not exist, skipping
+DROP TABLE
+psql:sola.sql:7679: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "hierarchy_level_pkey" for table "hierarchy_level"
+psql:sola.sql:7679: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "hierarchy_level_display_value_unique" for table "hierarchy_level"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+CREATE FUNCTION
+psql:sola.sql:8245: NOTICE:  trigger "trg_change_of_status" for table "source.source" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+CREATE FUNCTION
+psql:sola.sql:8265: NOTICE:  trigger "trg_change_from_pending" for table "administrative.rrr" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+CREATE FUNCTION
+psql:sola.sql:8281: NOTICE:  trigger "trg_remove" for table "cadastre.cadastre_object" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+CREATE FUNCTION
+psql:sola.sql:8298: NOTICE:  trigger "trg_new" for table "cadastre.cadastre_object" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+CREATE FUNCTION
+psql:sola.sql:8339: NOTICE:  trigger "trg_geommodify" for table "cadastre.cadastre_object" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+INSERT 0 66
+CREATE FUNCTION
+ make_function_st_makebox3d 
+----------------------------
+ 
+(1 row)
+
+DROP FUNCTION
+psql:sola.sql:8374: NOTICE:  function multiply_agg_step(pg_catalog.int4,pg_catalog.int4) does not exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+CREATE AGGREGATE
+psql:sola.sql:8382: NOTICE:  view "user_roles" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:sola.sql:8390: NOTICE:  view "br_current" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:sola.sql:8396: NOTICE:  view "br_report" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:sola.sql:8411: NOTICE:  view "road" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:sola.sql:8417: NOTICE:  view "survey_control" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:sola.sql:8423: NOTICE:  view "place_name" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:sola.sql:8429: NOTICE:  view "sys_reg_state_land" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:sola.sql:8460: NOTICE:  view "systematic_registration_listing" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:sola.sql:8469: NOTICE:  view "sys_reg_owner_name" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:sola.sql:8533: NOTICE:  view "systematic_registration_certificates" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+psql:sola.sql:8554: WARNING:  No data in table cadastre.spatial_unit, so no information to determine geometry type and srid
+CONTEXT:  PL/pgSQL function populate_geometry_columns(boolean) line 51 at assignment
+psql:sola.sql:8554: WARNING:  No data in table cadastre.spatial_unit_historic, so no information to determine geometry type and srid
+CONTEXT:  PL/pgSQL function populate_geometry_columns(boolean) line 51 at assignment
+psql:sola.sql:8554: WARNING:  No data in table cadastre.legal_space_utility_network, so no information to determine geometry type and srid
+CONTEXT:  PL/pgSQL function populate_geometry_columns(boolean) line 51 at assignment
+psql:sola.sql:8554: WARNING:  No data in table cadastre.legal_space_utility_network_historic, so no information to determine geometry type and srid
+CONTEXT:  PL/pgSQL function populate_geometry_columns(boolean) line 51 at assignment
+psql:sola.sql:8554: WARNING:  No data in table bulk_operation.spatial_unit_temporary, so no information to determine geometry type and srid
+CONTEXT:  PL/pgSQL function populate_geometry_columns(boolean) line 51 at assignment
+ populate_geometry_columns 
+---------------------------
+ probed:20 inserted:0
+(1 row)
+
+Loading SOLA business rules... 
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 8
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 23
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 20
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 12
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 5
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 2
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 4
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 2
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+State: SR 
+Loading   Extensions... 
+Loading Spatial Config... 
+UPDATE 0
+UPDATE 0
+UPDATE 1
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE VIEW
+ALTER TABLE
+CREATE VIEW
+ALTER TABLE
+CREATE VIEW
+ALTER TABLE
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+CREATE FUNCTION
+Loading Spatial Config... 
+DO
+Loading Table Changes... 
+DROP VIEW
+DROP VIEW
+DROP VIEW
+DROP VIEW
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+psql:extension/table_changes.sql:15: ERROR:  column "is_not_developed" of relation "ba_unit" does not exist
+psql:extension/table_changes.sql:16: ERROR:  column "years_for_dev" of relation "ba_unit" does not exist
+psql:extension/table_changes.sql:17: ERROR:  column "value_to_imp" of relation "ba_unit" does not exist
+psql:extension/table_changes.sql:18: ERROR:  column "term" of relation "ba_unit" does not exist
+psql:extension/table_changes.sql:19: ERROR:  column "land_use_code" of relation "ba_unit" does not exist
+psql:extension/table_changes.sql:20: ERROR:  column "location" of relation "ba_unit" does not exist
+psql:extension/table_changes.sql:21: ERROR:  column "floors_number" of relation "ba_unit" does not exist
+psql:extension/table_changes.sql:23: ERROR:  column "is_not_developed" of relation "ba_unit_historic" does not exist
+psql:extension/table_changes.sql:24: ERROR:  column "years_for_dev" of relation "ba_unit_historic" does not exist
+psql:extension/table_changes.sql:25: ERROR:  column "value_to_imp" of relation "ba_unit_historic" does not exist
+psql:extension/table_changes.sql:26: ERROR:  column "term" of relation "ba_unit_historic" does not exist
+psql:extension/table_changes.sql:27: ERROR:  column "land_use_code" of relation "ba_unit_historic" does not exist
+psql:extension/table_changes.sql:28: ERROR:  column "location" of relation "ba_unit_historic" does not exist
+psql:extension/table_changes.sql:29: ERROR:  column "floors_number" of relation "ba_unit_historic" does not exist
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+psql:extension/table_changes.sql:64: NOTICE:  column "dob" of relation "party" does not exist, skipping
+ALTER TABLE
+ALTER TABLE
+psql:extension/table_changes.sql:66: NOTICE:  column "dob" of relation "party_historic" does not exist, skipping
+ALTER TABLE
+ALTER TABLE
+psql:extension/table_changes.sql:70: NOTICE:  column "state" of relation "party" does not exist, skipping
+ALTER TABLE
+ALTER TABLE
+psql:extension/table_changes.sql:72: NOTICE:  column "state" of relation "party_historic" does not exist, skipping
+ALTER TABLE
+ALTER TABLE
+psql:extension/table_changes.sql:75: NOTICE:  column "nationality" of relation "party" does not exist, skipping
+ALTER TABLE
+ALTER TABLE
+psql:extension/table_changes.sql:77: NOTICE:  column "nationality" of relation "party_historic" does not exist, skipping
+ALTER TABLE
+ALTER TABLE
+psql:extension/table_changes.sql:81: NOTICE:  sequence "title_nr_seq" does not exist, skipping
+DROP SEQUENCE
+CREATE SEQUENCE
+COMMENT
+psql:extension/table_changes.sql:98: ERROR:  view "systematic_registration_listing" does not exist
+CREATE VIEW
+ALTER TABLE
+CREATE VIEW
+ALTER TABLE
+CREATE VIEW
+ALTER TABLE
+psql:extension/table_changes.sql:213: ERROR:  view "systematic_registration_certificates" does not exist
+CREATE VIEW
+ALTER TABLE
+psql:extension/table_changes.sql:274: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "source_describes_party_pkey" for table "source_describes_party"
+CREATE TABLE
+ALTER TABLE
+COMMENT
+psql:extension/table_changes.sql:284: ERROR:  index "source_describes_party_party_id_fk41_ind" does not exist
+CREATE INDEX
+psql:extension/table_changes.sql:293: ERROR:  index "source_describes_party_index_on_rowidentifier" does not exist
+CREATE INDEX
+psql:extension/table_changes.sql:302: ERROR:  index "source_describes_party_source_id_fk42_ind" does not exist
+CREATE INDEX
+psql:extension/table_changes.sql:312: ERROR:  trigger "__track_changes" for table "source_describes_party" does not exist
+CREATE TRIGGER
+psql:extension/table_changes.sql:322: ERROR:  trigger "__track_history" for table "source_describes_party" does not exist
+CREATE TRIGGER
+CREATE TABLE
+ALTER TABLE
+psql:extension/table_changes.sql:351: ERROR:  index "source_describes_party_historic_index_on_rowidentifier" does not exist
+CREATE INDEX
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:extension/table_changes.sql:393: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "consolidation_config_pkey" for table "consolidation_config"
+psql:extension/table_changes.sql:393: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "consolidation_config_lkey" for table "consolidation_config"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+UPDATE 1
+psql:extension/table_changes.sql:783: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "state_type_pkey" for table "nation_type"
+CREATE TABLE
+ALTER TABLE
+COMMENT
+Loading   Dispute Module... 
+psql:extension/dispute_module.sql:3: NOTICE:  sequence "dispute_nr_seq" does not exist, skipping
+DROP SEQUENCE
+CREATE SEQUENCE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+psql:extension/dispute_module.sql:23: NOTICE:  table "dispute" does not exist, skipping
+DROP TABLE
+psql:extension/dispute_module.sql:50: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "dispute_pkey" for table "dispute"
+psql:extension/dispute_module.sql:50: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "dispute_nr_unique" for table "dispute"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:extension/dispute_module.sql:60: NOTICE:  trigger "__track_changes" for table "administrative.dispute" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:extension/dispute_module.sql:67: NOTICE:  table "dispute_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:extension/dispute_module.sql:98: NOTICE:  trigger "__track_history" for table "administrative.dispute" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:extension/dispute_module.sql:104: NOTICE:  table "dispute_action" does not exist, skipping
+DROP TABLE
+psql:extension/dispute_module.sql:107: NOTICE:  table "dispute_category" does not exist, skipping
+DROP TABLE
+psql:extension/dispute_module.sql:118: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "dispute_category_pkey" for table "dispute_category"
+psql:extension/dispute_module.sql:118: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "dispute_category_display_value_unique" for table "dispute_category"
+CREATE TABLE
+COMMENT
+psql:extension/dispute_module.sql:126: NOTICE:  table "dispute_comments" does not exist, skipping
+DROP TABLE
+psql:extension/dispute_module.sql:145: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "dispute_comments_pkey" for table "dispute_comments"
+psql:extension/dispute_module.sql:145: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "dispute_comments_dispute_nr_unique" for table "dispute_comments"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:extension/dispute_module.sql:155: NOTICE:  trigger "__track_changes" for table "administrative.dispute_comments" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:extension/dispute_module.sql:162: NOTICE:  table "dispute_comments_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:extension/dispute_module.sql:184: NOTICE:  trigger "__track_history" for table "administrative.dispute_comments" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:extension/dispute_module.sql:190: NOTICE:  table "dispute_party" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:extension/dispute_module.sql:210: NOTICE:  trigger "__track_changes" for table "administrative.dispute_party" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:extension/dispute_module.sql:217: NOTICE:  table "dispute_party_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:extension/dispute_module.sql:236: NOTICE:  trigger "__track_history" for table "administrative.dispute_party" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:extension/dispute_module.sql:242: NOTICE:  table "dispute_status" does not exist, skipping
+DROP TABLE
+psql:extension/dispute_module.sql:253: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "dispute_status_pkey" for table "dispute_status"
+psql:extension/dispute_module.sql:253: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "dispute_status_display_value_unique" for table "dispute_status"
+CREATE TABLE
+COMMENT
+psql:extension/dispute_module.sql:260: NOTICE:  table "dispute_type" does not exist, skipping
+DROP TABLE
+psql:extension/dispute_module.sql:271: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "dispute_type_pkey" for table "dispute_type"
+psql:extension/dispute_module.sql:271: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "dispute_type_display_value_unique" for table "dispute_type"
+CREATE TABLE
+COMMENT
+psql:extension/dispute_module.sql:278: NOTICE:  table "other_authorities" does not exist, skipping
+DROP TABLE
+psql:extension/dispute_module.sql:289: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "other_authorities_pkey" for table "other_authorities"
+CREATE TABLE
+COMMENT
+psql:extension/dispute_module.sql:295: NOTICE:  table "source_describes_dispute" does not exist, skipping
+DROP TABLE
+psql:extension/dispute_module.sql:308: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "source_describes_dispute_pkey" for table "source_describes_dispute"
+CREATE TABLE
+CREATE INDEX
+COMMENT
+psql:extension/dispute_module.sql:322: NOTICE:  trigger "__track_changes" for table "administrative.source_describes_dispute" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:extension/dispute_module.sql:329: NOTICE:  table "source_describes_dispute_historic" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE INDEX
+psql:extension/dispute_module.sql:347: NOTICE:  trigger "__track_history" for table "administrative.source_describes_dispute" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+psql:extension/dispute_module.sql:368: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "dispute_role_type_pkey" for table "dispute_role_type"
+psql:extension/dispute_module.sql:368: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "dispute_role_type_display_value_unique" for table "dispute_role_type"
+CREATE TABLE
+ALTER TABLE
+COMMENT
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+ALTER TABLE
+CREATE INDEX
+Loading Reference Data... 
+SET
+SET
+SET
+SET
+SET
+SET
+DELETE 0
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+UPDATE 1
+DELETE 0
+INSERT 0 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 0
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 0
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 0
+UPDATE 1
+SET
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+SET
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+SET
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+SET
+UPDATE 0
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 1
+UPDATE 1
+UPDATE 0
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+INSERT 0 1
+UPDATE 1
+DELETE 0
+INSERT 0 1
+UPDATE 0
+DELETE 0
+UPDATE 1
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 1
+DELETE 0
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+DELETE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+../database/database-SR/extension/reference_data.sql: No such file or directory
+Loading   Business Rules... 
+UPDATE 1
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 1
+UPDATE 2
+UPDATE 2
+UPDATE 2
+UPDATE 2
+UPDATE 1
+UPDATE 1
+CREATE FUNCTION
+ALTER FUNCTION
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+Loading   Cadastre Functions... 
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+Loading   Systematic Registration Reports... 
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+Loading   User Roles... 
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:extension/users_roles.sql:164: ERROR:  duplicate key value violates unique constraint "approle_display_value_unique"
+DETAIL:  Key (display_value)=(Register Limited Road Access) already exists.
+UPDATE 35
+INSERT 0 11
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 0
+INSERT 0 0
+INSERT 0 0
+INSERT 0 0
+INSERT 0 0
+INSERT 0 0
+INSERT 0 0
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:extension/users_roles.sql:309: ERROR:  duplicate key value violates unique constraint "approle_appgroup_pkey"
+DETAIL:  Key (approle_code, appgroup_id)=(dispute, 65) already exists.
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 0
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+psql:extension/users_roles.sql:494: ERROR:  duplicate key value violates unique constraint "approle_appgroup_pkey"
+DETAIL:  Key (approle_code, appgroup_id)=(recordLien, super-group-id) already exists.
+psql:extension/users_roles.sql:495: ERROR:  duplicate key value violates unique constraint "approle_appgroup_pkey"
+DETAIL:  Key (approle_code, appgroup_id)=(mapExistingParcel, super-group-id) already exists.
+INSERT 0 1
+Loading   LGA and Ward Boundaries... 
+SET
+SET
+SET
+INSERT 0 1
+Loading   Systematic Registration Reports... 
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+the files in the folder changeset  
+psql:changeset/01-1403a_8.sql:5: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "version_pkey" for table "version"
+CREATE TABLE
+COMMENT
+COMMENT
+INSERT 0 1
+INSERT 0 1
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+psql:changeset/04-1403a_6.sql:26: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "sr_work_unit_pkey" for table "sr_work_unit"
+CREATE TABLE
+ALTER TABLE
+INSERT 0 0
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE TRIGGER
+CREATE TRIGGER
+UPDATE 1
+UPDATE 1
+UPDATE 1
+CREATE FUNCTION
+DELETE 0
+INSERT 0 1
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE INDEX
+CREATE INDEX
+INSERT 0 0
+UPDATE 0
+UPDATE 1
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+DELETE 1
+DELETE 1
+DELETE 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 2
+DELETE 1
+DELETE 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 1
+UPDATE 1
+INSERT 0 0
+INSERT 0 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+CREATE FUNCTION
+UPDATE 1
+CREATE FUNCTION
+ALTER FUNCTION
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+psql:changeset/13-1403c_52.sql:9: NOTICE:  view "current_parcels" does not exist, skipping
+DROP VIEW
+psql:changeset/13-1403c_52.sql:10: NOTICE:  view "pending_parcels" does not exist, skipping
+DROP VIEW
+psql:changeset/13-1403c_52.sql:11: NOTICE:  view "historic_parcels" does not exist, skipping
+DROP VIEW
+psql:changeset/13-1403c_52.sql:12: NOTICE:  view "current_pending_parcels" does not exist, skipping
+DROP VIEW
+psql:changeset/13-1403c_52.sql:14: NOTICE:  sequence "view_id_seq" does not exist, skipping
+DROP SEQUENCE
+CREATE SEQUENCE
+ALTER TABLE
+COMMENT
+psql:changeset/13-1403c_52.sql:27: NOTICE:  column "view_id" of relation "cadastre_object" does not exist, skipping
+ALTER TABLE
+ALTER TABLE
+psql:changeset/13-1403c_52.sql:33: NOTICE:  column "view_id" of relation "cadastre_object_historic" does not exist, skipping
+ALTER TABLE
+ALTER TABLE
+DO
+DROP OWNED
+REVOKE
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 0
+INSERT 0 0
+INSERT 0 0
+INSERT 0 0
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+GRANT
+INSERT 0 1
+CREATE FUNCTION
+ALTER FUNCTION
+DROP VIEW
+CREATE VIEW
+ALTER TABLE
+CREATE FUNCTION
+ALTER FUNCTION
+UPDATE 1
+INSERT 0 1
+DROP TRIGGER
+CREATE TRIGGER
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+UPDATE 1
+UPDATE 1
+psql:changeset/20-1404a_58.sql:76: NOTICE:  index "spatial_unit_group_name_ind" does not exist, skipping
+DROP INDEX
+CREATE INDEX
+psql:changeset/20-1404a_58.sql:80: NOTICE:  index "spatial_unit_group_hierarchy_level_ind" does not exist, skipping
+DROP INDEX
+CREATE INDEX
+CREATE FUNCTION
+CREATE FUNCTION
+psql:changeset/20-1404a_58.sql:158: NOTICE:  trigger "trg_geommodify" for table "cadastre.spatial_unit_group" does not exist, skipping
+DROP TRIGGER
+CREATE TRIGGER
+INSERT 0 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 1
+UPDATE 1
+DELETE 1
+UPDATE 1
+UPDATE 0
+INSERT 0 1
+CREATE FUNCTION
+ALTER FUNCTION
+UPDATE 1
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE FUNCTION
+ALTER FUNCTION
+DELETE 1
+DELETE 1
+DELETE 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 2
+DELETE 1
+DELETE 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+DROP VIEW
+CREATE VIEW
+ALTER TABLE
+INSERT 0 1
+UPDATE 1
+DELETE 1
+DELETE 1
+DELETE 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+CREATE TABLE
+ALTER TABLE
+CREATE INDEX
+INSERT 0 15
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+DROP VIEW
+CREATE VIEW
+ALTER TABLE
+DROP VIEW
+DROP FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+ALTER TABLE
+ALTER TABLE
+CREATE VIEW
+ALTER TABLE
+INSERT 0 1
+DELETE 1
+INSERT 0 1
+DELETE 1
+INSERT 0 1
+DELETE 1
+INSERT 0 1
+DELETE 1
+INSERT 0 1
+DELETE 1
+INSERT 0 1
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DROP TABLE
+psql:changeset/38-1405b_76.sql:78: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "consolidation_config_pkey" for table "consolidation_config"
+psql:changeset/38-1405b_76.sql:78: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "consolidation_config_lkey" for table "consolidation_config"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE FUNCTION
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+INSERT 0 1
+ALTER TABLE
+COMMENT
+ALTER TABLE
+COMMENT
+psql:changeset/40-1405c_78.sql:21: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "config_map_layer_pkey" for table "level_config_map_layer"
+CREATE TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+INSERT 0 1
+DELETE 1
+DELETE 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+DROP VIEW
+CREATE VIEW
+ALTER TABLE
+CREATE VIEW
+ALTER TABLE
+CREATE FUNCTION
+ALTER FUNCTION
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 0
+INSERT 0 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+UPDATE 0
+UPDATE 0
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE VIEW
+ALTER TABLE
+INSERT 0 1
+INSERT 0 1
+UPDATE 1
+UPDATE 1
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:changeset/55-1411a_CONSOLIDATION.sql:93: ERROR:  column "rowidentifier" of relation "ba_unit_as_party" does not exist
+ALTER TABLE
+COMMENT
+psql:changeset/55-1411a_CONSOLIDATION.sql:101: NOTICE:  table "extracted_rows" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+ALTER TABLE
+COMMENT
+COMMENT
+COMMENT
+SET
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+COMMENT
+COMMENT
+DROP TABLE
+CREATE TABLE
+ALTER TABLE
+COMMENT
+COMMENT
+COMMENT
+ALTER TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ALTER TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:changeset/56-1411b_39.sql:20: ERROR:  insert or update on table "approle_appgroup" violates foreign key constraint "approle_appgroup_approle_code_fk119"
+DETAIL:  Key (approle_code)=(registerSRCofO) is not present in table "approle".
+psql:changeset/56-1411b_39.sql:39: ERROR:  syntax error at or near "UPDATE"
+LINE 4: UPDATE administrative.rrr_type
+        ^
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 1
+INSERT 0 1
+INSERT 0 1
+DROP VIEW
+ALTER TABLE
+CREATE VIEW
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+COMMENT
+DELETE 1
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 0
+DELETE 1
+DELETE 1
+DELETE 1
+DELETE 1
+DELETE 1
+DELETE 1
+DELETE 1
+DELETE 1
+DELETE 1
+DELETE 1
+DELETE 1
+DELETE 1
+DELETE 1
+DELETE 1
+DELETE 0
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+psql:changeset/60-1412a_41-3-DROP-EXISTING-CONSOLIDATION-FUNCTIONS.sql:33: NOTICE:  function system.process_log_update(pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+INSERT 0 1
+psql:changeset/61-1412a_41-4-CONSOLIDATION-1411b_389.sql:3: NOTICE:  function system.consolidation_consolidate(pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+psql:changeset/61-1412a_41-4-CONSOLIDATION-1411b_389.sql:4: NOTICE:  function system.consolidation_extract(pg_catalog.varchar,pg_catalog.bool) does not exist, skipping
+DROP FUNCTION
+psql:changeset/61-1412a_41-4-CONSOLIDATION-1411b_389.sql:5: NOTICE:  function system.get_text_from_schema(pg_catalog.varchar) does not exist, skipping
+DROP FUNCTION
+psql:changeset/61-1412a_41-4-CONSOLIDATION-1411b_389.sql:6: NOTICE:  function system.script_to_schema(text) does not exist, skipping
+DROP FUNCTION
+psql:changeset/61-1412a_41-4-CONSOLIDATION-1411b_389.sql:7: NOTICE:  function system.consolidation_extract_make_consolidation_schema(pg_catalog.varchar,pg_catalog.bool) does not exist, skipping
+DROP FUNCTION
+psql:changeset/61-1412a_41-4-CONSOLIDATION-1411b_389.sql:8: NOTICE:  function system.script_to_schema(text) does not exist, skipping
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DROP FUNCTION
+DELETE 1
+DELETE 2
+DELETE 7
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 0
+INSERT 0 0
+INSERT 0 0
+INSERT 0 0
+INSERT 0 0
+INSERT 0 0
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+DROP TABLE
+psql:changeset/61-1412a_41-4-CONSOLIDATION-1411b_389.sql:215: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "extracted_rows_pkey" for table "extracted_rows"
+CREATE TABLE
+COMMENT
+COMMENT
+COMMENT
+DROP TABLE
+psql:changeset/61-1412a_41-4-CONSOLIDATION-1411b_389.sql:235: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "consolidation_config_pkey" for table "consolidation_config"
+psql:changeset/61-1412a_41-4-CONSOLIDATION-1411b_389.sql:235: NOTICE:  CREATE TABLE / UNIQUE will create implicit index "consolidation_config_lkey" for table "consolidation_config"
+CREATE TABLE
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+CREATE FUNCTION
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DELETE 83
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+CREATE VIEW
+ALTER TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE VIEW
+INSERT 0 1
+CREATE VIEW
+ALTER TABLE
+COMMENT
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 1
+CREATE VIEW
+DROP FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+DELETE 2
+DELETE 1
+DELETE 1
+INSERT 0 1
+ERROR:  null value in column "vl" violates not-null constraint
+DETAIL:  Failing row contains (system-id, null, t, A unique number that identifies the installed SOLA system. This ...).
+CONTEXT:  SQL statement "update system.setting
+		set vl = val_to_return
+		where name = 'system-id'"
+PL/pgSQL function system.set_system_id(character varying) line 16 at SQL statement
+psql:../database/database-SR/changeset/01-1405a_GR.sql:3: ERROR:  column "ground_rent" of relation "ba_unit" already exists
+psql:../database/database-SR/changeset/01-1405a_GR.sql:4: ERROR:  column "ground_rent" of relation "ba_unit_historic" already exists
+DELETE 1
+DELETE 1
+INSERT 0 1
+INSERT 0 1
+DROP FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+COMMENT
+psql:../database/database-SR/changeset/02-1405c_MD.sql:2: ERROR:  column "name" contains null values
+DELETE 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+UPDATE 1
+UPDATE 15
+DROP VIEW
+CREATE VIEW
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+INSERT 0 1
+UPDATE 1
+DROP VIEW
+CREATE VIEW
+ALTER TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DROP TABLE
+psql:../database/database-SR/changeset/06-1408a_st.sql:13: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "nation_type_pkey" for table "nation_type"
+CREATE TABLE
+ALTER TABLE
+COMMENT
+SET
+SET
+SET
+SET
+SET
+SET
+SET
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+CREATE VIEW
+ALTER TABLE
+Finished at 14:20:21.69 

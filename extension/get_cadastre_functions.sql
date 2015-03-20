@@ -47,7 +47,7 @@ begin
 
    end if;
 
-  val_to_return := 'X '||newseqnr;
+  val_to_return := newseqnr;
   return val_to_return;        
 end;
 $$ LANGUAGE plpgsql;
