@@ -14,11 +14,11 @@ begin
    if input_label  != '' then   
 
     if input_label  = 'SR' then   
-        select sg.id
-        into val_to_return
-        from  cadastre.spatial_unit_group sg
-        where hierarchy_level='1';
-		
+        --select sg.id
+        --into val_to_return
+        --from  cadastre.spatial_unit_group sg
+        --where hierarchy_level='1';
+	val_to_return= input_label;	
 		update system.setting
 		set vl = val_to_return
 		where name = 'system-id';
@@ -47,6 +47,8 @@ begin
 		from  cadastre.spatial_unit_group sg
 		where hierarchy_level='2' and label = input_label;
          end if;
+        else
+          val_to_return= input_label;
         end if;  
     end if;
 		

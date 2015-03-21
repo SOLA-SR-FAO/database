@@ -1,4 +1,4 @@
-﻿@echo off
+@echo off
 
 set psql_path=%~dp0
 set psql_path="%psql_path%psql\psql.exe"
@@ -26,6 +26,7 @@ set /p username= Username [%username%] :
 REM set /p label= State: [%label%] :
 
 REM set /p lga= Lga office code: [%lga%] :
+SET /p createDb= Populate the database? (Y/N) [%createDb%] :
 
 
 set rulesPath=rules\
@@ -121,6 +122,22 @@ for /f "eol=: delims=" %%F in (
 ) do %psql_path% --host=%host% --port=%port% --username=%username% --dbname=%dbname% --file=..\database\database-%label%\%changesetPath%\%%F  >> build.log 2>&1
 
 
+IF /I "%createDb%"=="Y" (
+	REM Extract the test data from the 7z archive and load it into the database. 
+	echo Extracting data files...
+	REM echo ### Extracting data files... >> build.log 2>&1
+	REM %zip_exe% e -y -o"%data_path%" "%data_path%sr.7z" >> build.log 2>&1
+	REM REM Use -p option if the archive is password protected as follows
+	REM REM %zip_exe% e -y -p%archive_password% -o%data_path% %data_path%sr.7z >> build.log 2>&1
+
+	REM Load the SQL files containing the test data
+	echo Load the SQL files containing the test data... >> build.log 2>&1
+	for %%f in (data\*.sql) do (
+	   echo Loading %%f...
+	   echo ### Loading %%f... >> build.log 2>&1
+	   %psql_path% --host=%host% --port=%port% --dbname=%dbname% --username=%username% --file=%%f >NUL 2>> build.log
+	)
+)
 echo Finished at %time% - Check build.log for errors!
 echo Finished at %time% >> build.log 2>&1
 pause

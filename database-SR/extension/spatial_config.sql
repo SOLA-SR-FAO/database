@@ -1,4 +1,4 @@
-﻿  
+  
 ----- Existing Layer Updates ----
 -- Remove layers from core SOLA that are not used 
 --DELETE FROM system.config_map_layer WHERE "name" IN ('place-names', 'survey-controls', 'roads'); 
@@ -192,8 +192,8 @@ $BODY$ LANGUAGE plpgsql;
 
 --------------------------------------------  
  
- --SET NEW SRID and OTHER ONDO PARAMETERS
---Changes made by Akande Adeoluwa  - 13/05/2013
+ --SET NEW SRID and OTHER PARAMETERS
+
 --UPDATE public.geometry_columns SET srid = <CUSTOMIZE>; 
 --UPDATE application.application set location = null;
 --UPDATE system.setting SET vl = '<CUSTOMIZE>' WHERE "name" = 'map-srid'; 
