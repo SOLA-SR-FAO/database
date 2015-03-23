@@ -1,4 +1,4 @@
--- ***********************************************************************
+﻿-- ***********************************************************************
 
 --Insert the new requesty_type called registerSRCofO and make it available as a service
 
@@ -17,16 +17,17 @@ INSERT INTO system.appgroup (id,name) VALUES(uuid_generate_v1(),'Deeds Registrar
 
 -- ***********************************************************************
 
-INSERT INTO system.approle_appgroup (approle_code,appgroup_id) VALUES('registerSRCofO','super-group-id');
-
-
--- ***********************************************************************
-
 INSERT INTO system.approle (code,display_value,status, description) VALUES ('registerSRCofO','CofO Registration','c','Allows to register a new CofO')
 
 
 -- ***********************************************************************
--- Changes to the Administrative Schema to allow deeds registry functionalities for Nigeria
+
+INSERT INTO system.approle_appgroup (approle_code,appgroup_id) VALUES('registerSRCofO','super-group-id');
+
+
+
+-- ***********************************************************************
+-- Changes to the Administrative Schema to allow deeds registry functionalities
 
 UPDATE administrative.rrr_type
    SET rrr_group_type_code = 'rights',

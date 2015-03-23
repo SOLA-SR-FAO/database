@@ -30,7 +30,9 @@ from cadastre.spatial_unit
 where level_id = ''road-centerline'' and ST_Intersects(st_transform(geom, #{srid}), ST_SetSRID(ST_3DMakeBox(ST_Point(#{minx}, #{miny}),ST_Point(#{maxx}, #{maxy})), #{srid}))');
 
 insert into system.config_map_layer(name, title, type_code, active, visible_in_start, item_order, style, pojo_structure, pojo_query_name)
-values('road-centerlines-for-parcel-plan', 'Road centerlines for Parcel Plan', 'pojo', true, true, 35, 'road_centerline_for_parcel_plan.xml', 'theGeom:LineString,label:""', 'SpatialResult.getRoadCenterlinesForParcelPlan');
+values('road-centerlines-for-parcel-plan', 'Road centerlines for Parcel Plan', 'pojo', true, true, 35, 'road_centerline_for_parcel_plan.xml', 'theGeom:MultiLineString,label:""', 'SpatialResult.getRoadCenterlinesForParcelPlan');
+
+update system.config_map_layer set  pojo_structure = 'theGeom:MultiLineString,label:""' where "name" = 'road-centerlines';
 
 insert into system.config_map_layer_metadata (name_layer ,"name" , "value") values ('road-centerlines-for-parcel-plan', 'in-plan-production', 'true');
 
