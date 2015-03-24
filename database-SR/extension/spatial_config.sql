@@ -1,9 +1,12 @@
-  
------ Existing Layer Updates ----
+ ----- Existing Layer Updates ----
 -- Remove layers from core SOLA that are not used 
 --DELETE FROM system.config_map_layer WHERE "name" IN ('place-names', 'survey-controls', 'roads'); 
 
 ---- Update existing layers to use correct sytles and item_order ----- 
+UPDATE system.config_map_layer
+SET url = 'http://demo.flossola.org/geoserver/sola/wms',
+wms_layers = 'sola:nz_orthophoto'
+WHERE "name" = 'orthophoto';
 
 -- Enable these map layers for the specific place. 
 --UPDATE system.config_map_layer
@@ -13,6 +16,7 @@
 	--wms_layers = '<customized>:orthophoto',
 	--active = TRUE
 --WHERE "name" = 'orthophoto';
+
 
 
 UPDATE system.config_map_layer
