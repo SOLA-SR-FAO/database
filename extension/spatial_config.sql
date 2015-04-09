@@ -1,4 +1,4 @@
-
+﻿
 ----- Existing Layer Updates ----
 -- Remove layers from core SOLA that are not used 
 --DELETE FROM system.config_map_layer WHERE "name" IN ('place-names', 'survey-controls', 'roads'); 
@@ -236,10 +236,23 @@ delete from system.map_search_option  where code = 'OVERLAPPING';
 delete from system.query  where name = 'map_search.cadastre_object_by_overlapping';
 delete from system.map_search_option  where code = 'SECTION';
 delete from system.query  where name = 'map_search.cadastre_object_by_section';
+delete from system.map_search_option  where code = 'DAILYWORKUNIT';
+delete from system.query  where name = 'map_search.cadastre_object_by_dailyworkunit';
 delete from system.map_search_option  where code = 'OWNERS';
 delete from system.query  where name = 'map_search.cadastre_object_by_owners';
 delete from system.map_search_option  where code = 'PENDING';
 delete from system.query  where name = 'map_search.cadastre_object_by_pending';
+
+
+
+insert into system.query(name, sql) values('map_search.cadastre_object_by_dailyworkunit', 'select sg.id, sg.label, st_asewkb(sg.geom) as the_geom from  
+cadastre.spatial_unit_group sg 
+where compare_strings(#{search_string}, sg.name) 
+and sg.hierarchy_level=5
+limit 30');
+
+insert into system.map_search_option(code, title, query_name, active, min_search_str_len, zoom_in_buffer) 
+values('DAILYWORKUNIT', 'Daily Work Unit', 'map_search.cadastre_object_by_dailyworkunit', true, 3, 50);
 
 
 
