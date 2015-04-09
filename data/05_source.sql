@@ -1,4 +1,4 @@
-﻿--
+--
 -- PostgreSQL database dump
 --
 
@@ -23,48 +23,6 @@ SET search_path = source, pg_catalog;
 SET SESSION AUTHORIZATION DEFAULT;
 
 ALTER TABLE administrative_source_type DISABLE TRIGGER ALL;
-
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('disputedoc', 'Dispute Document', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('cadastralSurvey', 'Boundary Definition', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('systematicRegn', 'Claims Form', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('mortgage', 'Mortgage', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('proclamation', 'Proclamation', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('courtOrder', 'Court Order', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('publicNotification', 'Public Notification for Systematic Registration', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('title', 'Certificate of Occupancy', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('agreement', 'Agreement', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('contractForSale', 'Contract for Sale', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('will', 'Will', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('agriConsent', 'Agricultural Consent', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('agriLease', 'Agricultural Lease', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('agriNotaryStatement', 'Agricultural Notary Statement', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('lease', 'Lease', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('powerOfAttorney', 'Power of Attorney', 'x', '', true);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('standardDocument', 'Standard Document', 'x', '', true);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('cadastralMap', 'Cadastral Map', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('waiver', 'Waiver to Caveat or other requirement', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('caveat', 'Caveat', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('objection', 'Objection', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('pdf', 'PDF Scanned Document', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('tiff', 'TIFF Scanned Document', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('jpg', 'JPG Scanned Document', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('tif', 'TIF Scanned Document', 'x', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('idVerification', 'Form of Identification including Personal ID', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('mainClaimantPhoto', 'Main Claimant Photo', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('mainClaimantId', 'Main Claimant ID', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('otherClaimantPhoto', 'Other Claimant Photo', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('otherClaimantId', 'Other Claimant ID', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('authorizedRepPhoto', 'Authorised Representative Photo', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('authorizedRepId', 'Authorised Representative ID', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('evidenceOfOwnership', 'Evidence of Ownership', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('disputesForm', 'Disputes Form', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('sketchMap', 'Sketch Map', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('fieldMap', 'Field Map', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('recordLien', 'Lien', 'c', NULL, false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('parcelPlan', 'Parcel Plan', 'c', NULL, false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('note', 'Application Note', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('deed', 'Deed', 'c', '', false);
-INSERT INTO administrative_source_type (code, display_value, status, description, is_for_registration) VALUES ('signingList', 'List of Parcels signed by governor', 'c', 'Extension to LADM', false);
 
 
 ALTER TABLE administrative_source_type ENABLE TRIGGER ALL;
@@ -101,11 +59,6 @@ ALTER TABLE archive_historic ENABLE TRIGGER ALL;
 
 ALTER TABLE availability_status_type DISABLE TRIGGER ALL;
 
-INSERT INTO availability_status_type (code, display_value, status, description) VALUES ('archiveConverted', 'Converted::::Convertito', 'c', NULL);
-INSERT INTO availability_status_type (code, display_value, status, description) VALUES ('archiveDestroyed', 'Destroyed::::Distrutto', 'x', NULL);
-INSERT INTO availability_status_type (code, display_value, status, description) VALUES ('incomplete', 'Incomplete::::Incompleto', 'c', NULL);
-INSERT INTO availability_status_type (code, display_value, status, description) VALUES ('archiveUnknown', 'Unknown::::Sconosciuto', 'c', NULL);
-INSERT INTO availability_status_type (code, display_value, status, description) VALUES ('available', 'Available', 'c', 'Extension to LADM');
 
 
 ALTER TABLE availability_status_type ENABLE TRIGGER ALL;
@@ -117,21 +70,6 @@ ALTER TABLE availability_status_type ENABLE TRIGGER ALL;
 --
 
 ALTER TABLE presentation_form_type DISABLE TRIGGER ALL;
-
-INSERT INTO presentation_form_type (code, display_value, status, description) VALUES ('documentDigital', 'Digital Document::::Documento Digitale', 'c', NULL);
-INSERT INTO presentation_form_type (code, display_value, status, description) VALUES ('documentHardcopy', 'Hardcopy Document::::Documento in Hardcopy', 'c', NULL);
-INSERT INTO presentation_form_type (code, display_value, status, description) VALUES ('imageDigital', 'Digital Image::::Immagine Digitale', 'c', NULL);
-INSERT INTO presentation_form_type (code, display_value, status, description) VALUES ('imageHardcopy', 'Hardcopy Image::::Immagine in Hardcopy', 'c', NULL);
-INSERT INTO presentation_form_type (code, display_value, status, description) VALUES ('mapDigital', 'Digital Map::::Mappa Digitale', 'c', NULL);
-INSERT INTO presentation_form_type (code, display_value, status, description) VALUES ('mapHardcopy', 'Hardcopy Map::::Mappa in Hardcopy', 'c', NULL);
-INSERT INTO presentation_form_type (code, display_value, status, description) VALUES ('modelDigital', 'Digital Model::::Modello Digitale'',', 'c', NULL);
-INSERT INTO presentation_form_type (code, display_value, status, description) VALUES ('modelHarcopy', 'Hardcopy Model::::Modello in Hardcopy', 'c', NULL);
-INSERT INTO presentation_form_type (code, display_value, status, description) VALUES ('profileDigital', 'Digital Profile::::Profilo Digitale', 'c', NULL);
-INSERT INTO presentation_form_type (code, display_value, status, description) VALUES ('profileHardcopy', 'Hardcopy Profile::::Profilo in Hardcopy', 'c', NULL);
-INSERT INTO presentation_form_type (code, display_value, status, description) VALUES ('tableDigital', 'Digital Table::::Tabella Digitale', 'c', NULL);
-INSERT INTO presentation_form_type (code, display_value, status, description) VALUES ('tableHardcopy', 'Hardcopy Table::::Tabella in Hardcopy', 'c', NULL);
-INSERT INTO presentation_form_type (code, display_value, status, description) VALUES ('videoDigital', 'Digital Video::::Video Digitale'',', 'c', NULL);
-INSERT INTO presentation_form_type (code, display_value, status, description) VALUES ('videoHardcopy', 'Hardcopy Video::::Video in Hardcopy', 'c', NULL);
 
 
 ALTER TABLE presentation_form_type ENABLE TRIGGER ALL;
@@ -225,15 +163,6 @@ SELECT pg_catalog.setval('source_la_nr_seq', 21, true);
 
 ALTER TABLE spatial_source_type DISABLE TRIGGER ALL;
 
-INSERT INTO spatial_source_type (code, display_value, status, description) VALUES ('orthoPhoto', 'Orthophoto::::Foto Ortopanoramica', 'c', NULL);
-INSERT INTO spatial_source_type (code, display_value, status, description) VALUES ('fieldSketch', 'Field Sketch', 'x', '');
-INSERT INTO spatial_source_type (code, display_value, status, description) VALUES ('gnssSurvey', 'GNSS (GPS) Survey', 'c', '');
-INSERT INTO spatial_source_type (code, display_value, status, description) VALUES ('relativeMeasurement', 'Relative Measurements', 'x', '');
-INSERT INTO spatial_source_type (code, display_value, status, description) VALUES ('topoMap', 'Topographical Map', 'c', '');
-INSERT INTO spatial_source_type (code, display_value, status, description) VALUES ('video', 'Video', 'x', '');
-INSERT INTO spatial_source_type (code, display_value, status, description) VALUES ('surveyData', 'Survey Data', 'c', '');
-INSERT INTO spatial_source_type (code, display_value, status, description) VALUES ('cadastralSurvey', 'Boundary Definition', 'c', 'Extension to LADM');
-INSERT INTO spatial_source_type (code, display_value, status, description) VALUES ('fieldMap', 'Field Map', 'c', '');
 
 
 ALTER TABLE spatial_source_type ENABLE TRIGGER ALL;

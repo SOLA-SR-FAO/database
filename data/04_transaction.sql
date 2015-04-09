@@ -1,4 +1,4 @@
-﻿--
+--
 -- PostgreSQL database dump
 --
 
@@ -24,10 +24,6 @@ SET SESSION AUTHORIZATION DEFAULT;
 
 ALTER TABLE reg_status_type DISABLE TRIGGER ALL;
 
-INSERT INTO reg_status_type (code, display_value, description, status) VALUES ('current', 'Current', NULL, 'c');
-INSERT INTO reg_status_type (code, display_value, description, status) VALUES ('pending', 'Pending', NULL, 'c');
-INSERT INTO reg_status_type (code, display_value, description, status) VALUES ('historic', 'Historic', NULL, 'c');
-INSERT INTO reg_status_type (code, display_value, description, status) VALUES ('previous', 'Previous', NULL, 'c');
 
 
 ALTER TABLE reg_status_type ENABLE TRIGGER ALL;
@@ -40,10 +36,6 @@ ALTER TABLE reg_status_type ENABLE TRIGGER ALL;
 
 ALTER TABLE transaction_status_type DISABLE TRIGGER ALL;
 
-INSERT INTO transaction_status_type (code, display_value, description, status) VALUES ('approved', 'Approved::::Approvata', NULL, 'c');
-INSERT INTO transaction_status_type (code, display_value, description, status) VALUES ('cancelled', 'CancelledApproved::::Cancellata', NULL, 'c');
-INSERT INTO transaction_status_type (code, display_value, description, status) VALUES ('pending', 'Pending::::In Attesa', NULL, 'c');
-INSERT INTO transaction_status_type (code, display_value, description, status) VALUES ('completed', 'Completed::::Completato', NULL, 'c');
 
 
 ALTER TABLE transaction_status_type ENABLE TRIGGER ALL;

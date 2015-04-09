@@ -1,7 +1,10 @@
-﻿
 -- Security Role Configurations
+ALTER TABLE system.appuser DISABLE TRIGGER ALL;
+ALTER TABLE system.approle DISABLE TRIGGER ALL;
+ALTER TABLE system.appgroup DISABLE TRIGGER ALL;
+ALTER TABLE system.approle_appgroup DISABLE TRIGGER ALL;
 
--- kaduna specific Roles
+-- SR specific Roles
 INSERT INTO system.approle (code, display_value, status, description)
 SELECT 'ApplnNr', 'Set Application Number', 'c', 'Set application number to match number allocated by LRS' 
 WHERE NOT EXISTS (SELECT code FROM system.approle WHERE code = 'ApplnNr');
@@ -31,10 +34,10 @@ SELECT 'ExportMap', 'Export Map','c', 'Export a selected map feature to KML for 
 WHERE NOT EXISTS (SELECT code FROM system.approle WHERE code = 'ExportMap');
 
 insert into system.approle(code, display_value, status, description) values('recordLien', 'Record Lien', 'c', 'Allows to make changes for registration of lien');
-insert into system.approle(code, display_value, status, description) values('mapExistingParcel', 'Map Existing Parcel', 'c', 'Allows to map existing parcel as described on existing certificate of occupancy');
+INSERT INTO system.approle (code,display_value,status, description) VALUES ('registerSRCofO','CofO Registration','c','Allows to register a new CofO');
 
+INSERT INTO system.appgroup(id, "name", description) VALUES ('deedsRegistrar','Deeds Registrar', 'Account for Deed Registar');
 
--- Accounts Role   
 INSERT INTO system.appgroup(id, "name", description)
   (SELECT '50', 'Accounts', 'The Accounts staff of the Accounting Division have access to set the fee payment details for lodged ' ||
                                           'applications. '
@@ -57,7 +60,13 @@ INSERT INTO system.appgroup(id, "name", description)
   (SELECT '60', 'Land Registry', 'The Land Registry staff of the Land Management Division. ' ||
   'Users assigned this role can lodge and edit land registry applications as well as generate folio certificates.'
    WHERE NOT EXISTS (SELECT id FROM system.appgroup WHERE "name" = 'Land Registry' ));  
-   
+  
+
+-- *SAMUEL AKANDE ISLAM**********************************************************************
+INSERT INTO system.approle_appgroup (approle_code,appgroup_id) VALUES('registerSRCofO','super-group-id');
+--------------------------------------------------------------------------------------------------------------
+
+  
 DELETE FROM system.approle_appgroup WHERE appgroup_id = (SELECT id FROM system.appgroup WHERE "name" = 'Land Registry'); 
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'TransactionCommit', id FROM system.appgroup WHERE "name" = 'Land Registry');	
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'ApplnArchive', id FROM system.appgroup WHERE "name" = 'Land Registry');	
@@ -253,6 +262,7 @@ INSERT INTO system.appgroup(id, "name", description)
    WHERE NOT EXISTS (SELECT id FROM system.appgroup WHERE "name" = 'Registration' ));  
 
 DELETE FROM system.approle_appgroup WHERE appgroup_id = (SELECT id FROM system.appgroup WHERE "name" = 'Registration'); 
+
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'ApplnEdit', id FROM system.appgroup WHERE "name" = 'Registration');
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'TransactionCommit', id FROM system.appgroup WHERE "name" = 'Registration');
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'CancelService', id FROM system.appgroup WHERE "name" = 'Registration');
@@ -281,8 +291,6 @@ INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'SourceS
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'ParcelSave', id FROM system.appgroup WHERE "name" = 'Registration');	
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'ManageUserPassword', id FROM system.appgroup WHERE "name" = 'Registration');	
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'ViewSource', id FROM system.appgroup WHERE "name" = 'Registration');	
-		
-		
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'dispute', id FROM system.appgroup WHERE "name" = 'Registration');	
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'DisputeCommentsSave', id FROM system.appgroup WHERE "name" = 'Registration');	
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'DisputeSave', id FROM system.appgroup WHERE "name" = 'Registration');	
@@ -306,7 +314,8 @@ INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'service
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id) 
 (SELECT r.code, g.id FROM system.appgroup g, application.request_type r 
  WHERE g."name" = 'Registration'
- AND   r.request_category_code IN ('registrationServices', 'nonRegServices', 'informationServices'));
+ AND   r.request_category_code IN ('registrationServices', 'nonRegServices', 'informationServices')
+ AND not exists (select * from system.approle_appgroup where approle_code=r.code and appgroup_id= g.id));
  
  
  
@@ -433,7 +442,7 @@ INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'ReportG
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'BaunitSave', id FROM system.appgroup WHERE "name" = 'GIS');	
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'BaunitNotatSave', id FROM system.appgroup WHERE "name" = 'GIS');	
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'BauunitrrrSave', id FROM system.appgroup WHERE "name" = 'GIS');
-
+ 
 
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id) 
 (SELECT r.code, g.id FROM system.appgroup g, application.request_type r 
@@ -491,9 +500,30 @@ VALUES ((SELECT id FROM system.appuser WHERE username = 'appapprover'), (SELECT 
 --
 
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id) (SELECT 'recordLien', id FROM system.appgroup WHERE "name" = 'Land Deeds');  
-INSERT INTO system.approle_appgroup (approle_code, appgroup_id) values ('recordLien', 'super-group-id'); 
-INSERT INTO system.approle_appgroup(approle_code, appgroup_id) values('mapExistingParcel', 'super-group-id');
 INSERT INTO system.approle_appgroup (approle_code, appgroup_id)	(SELECT 'mapExistingParcel', id FROM system.appgroup WHERE "name" = 'GIS');	
 
  
+--- consolidation -----
+-- Insert roles
+insert into system.approle(code, display_value, status, description)
+select 'ApplnTransfer', 'Appln Action - Transfer', 'c', 'The action that bring the application in the To be transferred state.'
+where not exists (select * from system.approle where code='ApplnTransfer');
+insert into system.approle_appgroup(approle_code, appgroup_id) 
+select 'ApplnTransfer', 'super-group-id'
+where not exists (select * from system.approle_appgroup where approle_code = 'ApplnTransfer' and appgroup_id='super-group-id');
 
+delete from system.approle where code = 'consolidationExt';
+INSERT INTO system.approle (code, display_value, status, description) 
+VALUES ('consolidationExt', 'Admin - Consolidation Extract::::Admin - Consolidation Extract::::Admin - Consolidation Extract::::Admin - Consolidation Extract', 'c', 
+'Allows system administrators to start the extraction or records for consolidating in another system.::::Allows system administrators to start the extraction or records for consolidating in another system.::::Allows system administrators to start the extraction or records for consolidating in another system.::::Allows system administrators to start the extraction or records for consolidating in another system.');
+
+delete from system.approle where code = 'consolidationCons';
+INSERT INTO system.approle (code, display_value, status, description) 
+VALUES ('consolidationCons', 'Admin - Consolidation Consolidate::::Admin - Consolidation Consolidate::::Admin - Consolidation Consolidate::::Admin - Consolidation Consolidate', 'c', 
+'Allows system administrators to consolidate records coming from another system.::::Allows system administrators to start the extraction or records for consolidating in another system.::::Allows system administrators to start the extraction or records for consolidating in another system.::::Allows system administrators to start the extraction or records for consolidating in another system.');
+
+
+ALTER TABLE system.appuser ENABLE TRIGGER ALL;
+ALTER TABLE system.approle ENABLE TRIGGER ALL;
+ALTER TABLE system.appgroup ENABLE TRIGGER ALL;
+ALTER TABLE system.approle_appgroup ENABLE TRIGGER ALL;
