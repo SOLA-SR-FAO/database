@@ -180,6 +180,8 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="change_time" COLSPAN="2" ALIGN="LEFT">change_time</TD><TD PORT="change_time.type" ALIGN="LEFT">timestamp[29,6]</TD></TR>
       <TR><TD PORT="classification_code" COLSPAN="2" ALIGN="LEFT">classification_code</TD><TD PORT="classification_code.type" ALIGN="LEFT">varchar[20]</TD></TR>
       <TR><TD PORT="redact_code" COLSPAN="2" ALIGN="LEFT">redact_code</TD><TD PORT="redact_code.type" ALIGN="LEFT">varchar[20]</TD></TR>
+      <TR><TD PORT="state" COLSPAN="2" ALIGN="LEFT">state</TD><TD PORT="state.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="nationality" COLSPAN="2" ALIGN="LEFT">nationality</TD><TD PORT="nationality.type" ALIGN="LEFT">varchar[255]</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">8 &gt;</TD></TR>
     </TABLE>>
     URL="party.html"

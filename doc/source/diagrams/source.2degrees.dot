@@ -164,8 +164,7 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">source</TD></TR>
       <TR><TD PORT="id" COLSPAN="2" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD><TD PORT="id.type" ALIGN="LEFT">varchar[40]</TD></TR>
       <TR><TD PORT="maintype" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">maintype</TD><TD PORT="maintype.type" ALIGN="LEFT">varchar[20]</TD></TR>
-      <TR><TD PORT="la_nr" COLSPAN="2" ALIGN="LEFT">la_nr</TD><TD PORT="la_nr.type" ALIGN="LEFT">varchar[20]</TD></TR>
-      <TR><TD PORT="reference_nr" COLSPAN="2" ALIGN="LEFT">reference_nr</TD><TD PORT="reference_nr.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="la_nr" COLSPAN="2" ALIGN="LEFT">la_nr</TD><TD PORT="la_nr.type" ALIGN="LEFT">varchar[100]</TD></TR>
       <TR><TD PORT="archive_id" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">archive_id</TD><TD PORT="archive_id.type" ALIGN="LEFT">varchar[40]</TD></TR>
       <TR><TD PORT="acceptance" COLSPAN="2" ALIGN="LEFT">acceptance</TD><TD PORT="acceptance.type" ALIGN="LEFT">date[13]</TD></TR>
       <TR><TD PORT="recordation" COLSPAN="2" ALIGN="LEFT">recordation</TD><TD PORT="recordation.type" ALIGN="LEFT">date[13]</TD></TR>
@@ -188,6 +187,7 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="change_time" COLSPAN="2" ALIGN="LEFT">change_time</TD><TD PORT="change_time.type" ALIGN="LEFT">timestamp[29,6]</TD></TR>
       <TR><TD PORT="classification_code" COLSPAN="2" ALIGN="LEFT">classification_code</TD><TD PORT="classification_code.type" ALIGN="LEFT">varchar[20]</TD></TR>
       <TR><TD PORT="redact_code" COLSPAN="2" ALIGN="LEFT">redact_code</TD><TD PORT="redact_code.type" ALIGN="LEFT">varchar[20]</TD></TR>
+      <TR><TD PORT="reference_nr" COLSPAN="2" ALIGN="LEFT">reference_nr</TD><TD PORT="reference_nr.type" ALIGN="LEFT">varchar[255]</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 6</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">7 &gt;</TD></TR>
     </TABLE>>
     URL="source.html"

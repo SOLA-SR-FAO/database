@@ -28,6 +28,7 @@ digraph "sys_reg_state_land" {
       <TR><TD PORT="land_use_code" COLSPAN="3" ALIGN="LEFT">land_use_code</TD></TR>
       <TR><TD PORT="ba_unit_id" COLSPAN="3" ALIGN="LEFT">ba_unit_id</TD></TR>
       <TR><TD PORT="size" COLSPAN="3" ALIGN="LEFT">size</TD></TR>
+      <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="residential" COLSPAN="3" ALIGN="LEFT">residential</TD></TR>
       <TR><TD PORT="agricultural" COLSPAN="3" ALIGN="LEFT">agricultural</TD></TR>
       <TR><TD PORT="commercial" COLSPAN="3" ALIGN="LEFT">commercial</TD></TR>

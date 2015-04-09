@@ -36,7 +36,6 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="type_code" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">type_code</TD></TR>
       <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="name_firstpart" COLSPAN="3" ALIGN="LEFT">name_firstpart</TD></TR>
-      <TR><TD PORT="name_lastpart" COLSPAN="3" ALIGN="LEFT">name_lastpart</TD></TR>
       <TR><TD PORT="creation_date" COLSPAN="3" ALIGN="LEFT">creation_date</TD></TR>
       <TR><TD PORT="expiration_date" COLSPAN="3" ALIGN="LEFT">expiration_date</TD></TR>
       <TR><TD PORT="status_code" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">status_code</TD></TR>
@@ -48,6 +47,15 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="change_time" COLSPAN="3" BGCOLOR="#c0c0c0" ALIGN="LEFT">change_time</TD></TR>
       <TR><TD PORT="classification_code" COLSPAN="3" ALIGN="LEFT">classification_code</TD></TR>
       <TR><TD PORT="redact_code" COLSPAN="3" ALIGN="LEFT">redact_code</TD></TR>
+      <TR><TD PORT="name_lastpart" COLSPAN="3" ALIGN="LEFT">name_lastpart</TD></TR>
+      <TR><TD PORT="is_not_developed" COLSPAN="3" ALIGN="LEFT">is_not_developed</TD></TR>
+      <TR><TD PORT="years_for_dev" COLSPAN="3" ALIGN="LEFT">years_for_dev</TD></TR>
+      <TR><TD PORT="value_to_imp" COLSPAN="3" ALIGN="LEFT">value_to_imp</TD></TR>
+      <TR><TD PORT="term" COLSPAN="3" ALIGN="LEFT">term</TD></TR>
+      <TR><TD PORT="land_use_code" COLSPAN="3" ALIGN="LEFT">land_use_code</TD></TR>
+      <TR><TD PORT="location" COLSPAN="3" ALIGN="LEFT">location</TD></TR>
+      <TR><TD PORT="floors_number" COLSPAN="3" ALIGN="LEFT">floors_number</TD></TR>
+      <TR><TD PORT="ground_rent" COLSPAN="3" ALIGN="LEFT">ground_rent</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">10 &gt;</TD></TR>
     </TABLE>>
     URL="ba_unit.html"
@@ -61,7 +69,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="ba_unit_id" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">ba_unit_id</TD><TD PORT="ba_unit_id.type" ALIGN="LEFT">varchar[40]</TD></TR>
       <TR><TD PORT="rrr_id" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">rrr_id</TD><TD PORT="rrr_id.type" ALIGN="LEFT">varchar[40]</TD></TR>
       <TR><TD PORT="transaction_id" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">transaction_id</TD><TD PORT="transaction_id.type" ALIGN="LEFT">varchar[40]</TD></TR>
-      <TR><TD PORT="reference_nr" COLSPAN="2" ALIGN="LEFT">reference_nr</TD><TD PORT="reference_nr.type" ALIGN="LEFT">varchar[15]</TD></TR>
+      <TR><TD PORT="reference_nr" COLSPAN="2" ALIGN="LEFT">reference_nr</TD><TD PORT="reference_nr.type" ALIGN="LEFT">varchar[100]</TD></TR>
       <TR><TD PORT="notation_text" COLSPAN="2" ALIGN="LEFT">notation_text</TD><TD PORT="notation_text.type" ALIGN="LEFT">varchar[1000]</TD></TR>
       <TR><TD PORT="notation_date" COLSPAN="2" ALIGN="LEFT">notation_date</TD><TD PORT="notation_date.type" ALIGN="LEFT">timestamp[29,6]</TD></TR>
       <TR><TD PORT="status_code" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">status_code</TD><TD PORT="status_code.type" ALIGN="LEFT">varchar[20]</TD></TR>

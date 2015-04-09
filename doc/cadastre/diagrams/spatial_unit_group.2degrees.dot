@@ -37,9 +37,9 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">spatial_unit_group</TD></TR>
       <TR><TD PORT="id" COLSPAN="2" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD><TD PORT="id.type" ALIGN="LEFT">varchar[40]</TD></TR>
-      <TR><TD PORT="hierarchy_level" COLSPAN="2" ALIGN="LEFT">hierarchy_level</TD><TD PORT="hierarchy_level.type" ALIGN="LEFT">int4[10]</TD></TR>
+      <TR><TD PORT="hierarchy_level" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">hierarchy_level</TD><TD PORT="hierarchy_level.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="label" COLSPAN="2" ALIGN="LEFT">label</TD><TD PORT="label.type" ALIGN="LEFT">varchar[50]</TD></TR>
-      <TR><TD PORT="name" COLSPAN="2" ALIGN="LEFT">name</TD><TD PORT="name.type" ALIGN="LEFT">varchar[50]</TD></TR>
+      <TR><TD PORT="name" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD><TD PORT="name.type" ALIGN="LEFT">varchar[50]</TD></TR>
       <TR><TD PORT="reference_point" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">reference_point</TD><TD PORT="reference_point.type" ALIGN="LEFT">geometry[2147483647]</TD></TR>
       <TR><TD PORT="geom" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">geom</TD><TD PORT="geom.type" ALIGN="LEFT">geometry[2147483647]</TD></TR>
       <TR><TD PORT="found_in_spatial_unit_group_id" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">found_in_spatial_unit_group_id</TD><TD PORT="found_in_spatial_unit_group_id.type" ALIGN="LEFT">varchar[40]</TD></TR>

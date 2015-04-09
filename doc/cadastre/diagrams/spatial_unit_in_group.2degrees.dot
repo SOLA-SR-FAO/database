@@ -120,9 +120,9 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">spatial_unit_group</TD></TR>
       <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
-      <TR><TD PORT="hierarchy_level" COLSPAN="3" ALIGN="LEFT">hierarchy_level</TD></TR>
+      <TR><TD PORT="hierarchy_level" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">hierarchy_level</TD></TR>
       <TR><TD PORT="label" COLSPAN="3" ALIGN="LEFT">label</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="reference_point" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">reference_point</TD></TR>
       <TR><TD PORT="geom" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">geom</TD></TR>
       <TR><TD PORT="found_in_spatial_unit_group_id" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">found_in_spatial_unit_group_id</TD></TR>

@@ -29,6 +29,7 @@ Function: get_new_cadastre_object_identifier_first_part
 Function: get_new_cadastre_object_identifier_last_part
 Function: snap_geometry_to_geometry
 hierarchy_level
+sr_work_unit
 Trigger Function: f_for_tbl_cadastre_object_trg_geommodify
 Trigger Function: f_for_tbl_cadastre_object_trg_new
 Trigger Function: f_for_tbl_cadastre_object_trg_remove

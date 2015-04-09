@@ -1,4 +1,5 @@
 Trigger Function: f_for_tbl_rrr_trg_change_from_pending
+source_describes_dispute
 Sequence: rrr_nr_seq
 Sequence: notation_reference_nr_seq
 Sequence: ba_unit_last_name_part_seq
@@ -13,6 +14,9 @@ Function: get_concatenated_name
 Function: get_calculated_area_size_action
 Function: get_ba_unit_pending_action
 Function: ba_unit_name_is_valid
+dispute_status
+dispute_role_type
+dispute_party
 party_for_rrr
 notation
 required_relationship_baunit
@@ -20,16 +24,21 @@ ba_unit_contains_spatial_unit
 source_describes_rrr
 source_describes_ba_unit
 mortgage_isbased_in_rrr
+dispute_comments
 condition_for_rrr
 ba_unit_target
 ba_unit_as_party
 ba_unit_area
+dispute
 rrr_share
 rrr
 ba_unit
 rrr_type
 rrr_group_type
+other_authorities
 mortgage_type
+dispute_type
+dispute_category
 condition_type
 ba_unit_type
 ba_unit_rel_type

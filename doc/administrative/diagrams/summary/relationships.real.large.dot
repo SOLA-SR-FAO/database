@@ -26,7 +26,6 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
       <TR><TD PORT="application_id" COLSPAN="3" ALIGN="LEFT">application_id</TD></TR>
       <TR><TD PORT="name_firstpart" COLSPAN="3" ALIGN="LEFT">name_firstpart</TD></TR>
-      <TR><TD PORT="name_lastpart" COLSPAN="3" ALIGN="LEFT">name_lastpart</TD></TR>
       <TR><TD PORT="area" COLSPAN="3" ALIGN="LEFT">area</TD></TR>
       <TR><TD PORT="total_value" COLSPAN="3" ALIGN="LEFT">total_value</TD></TR>
       <TR><TD PORT="verified_exists" COLSPAN="3" ALIGN="LEFT">verified_exists</TD></TR>
@@ -38,6 +37,7 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="change_action" COLSPAN="3" ALIGN="LEFT">change_action</TD></TR>
       <TR><TD PORT="change_user" COLSPAN="3" ALIGN="LEFT">change_user</TD></TR>
       <TR><TD PORT="change_time" COLSPAN="3" ALIGN="LEFT">change_time</TD></TR>
+      <TR><TD PORT="name_lastpart" COLSPAN="3" ALIGN="LEFT">name_lastpart</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="tables/../../application/tables/application_property.html"
@@ -64,7 +64,6 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="type_code" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">type_code</TD></TR>
       <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="name_firstpart" COLSPAN="3" ALIGN="LEFT">name_firstpart</TD></TR>
-      <TR><TD PORT="name_lastpart" COLSPAN="3" ALIGN="LEFT">name_lastpart</TD></TR>
       <TR><TD PORT="creation_date" COLSPAN="3" ALIGN="LEFT">creation_date</TD></TR>
       <TR><TD PORT="expiration_date" COLSPAN="3" ALIGN="LEFT">expiration_date</TD></TR>
       <TR><TD PORT="status_code" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">status_code</TD></TR>
@@ -76,6 +75,15 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="change_time" COLSPAN="3" BGCOLOR="#c0c0c0" ALIGN="LEFT">change_time</TD></TR>
       <TR><TD PORT="classification_code" COLSPAN="3" ALIGN="LEFT">classification_code</TD></TR>
       <TR><TD PORT="redact_code" COLSPAN="3" ALIGN="LEFT">redact_code</TD></TR>
+      <TR><TD PORT="name_lastpart" COLSPAN="3" ALIGN="LEFT">name_lastpart</TD></TR>
+      <TR><TD PORT="is_not_developed" COLSPAN="3" ALIGN="LEFT">is_not_developed</TD></TR>
+      <TR><TD PORT="years_for_dev" COLSPAN="3" ALIGN="LEFT">years_for_dev</TD></TR>
+      <TR><TD PORT="value_to_imp" COLSPAN="3" ALIGN="LEFT">value_to_imp</TD></TR>
+      <TR><TD PORT="term" COLSPAN="3" ALIGN="LEFT">term</TD></TR>
+      <TR><TD PORT="land_use_code" COLSPAN="3" ALIGN="LEFT">land_use_code</TD></TR>
+      <TR><TD PORT="location" COLSPAN="3" ALIGN="LEFT">location</TD></TR>
+      <TR><TD PORT="floors_number" COLSPAN="3" ALIGN="LEFT">floors_number</TD></TR>
+      <TR><TD PORT="ground_rent" COLSPAN="3" ALIGN="LEFT">ground_rent</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">10 &gt;</TD></TR>
     </TABLE>>
     URL="tables/ba_unit.html"
@@ -211,6 +219,7 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="change_time" COLSPAN="3" ALIGN="LEFT">change_time</TD></TR>
       <TR><TD PORT="classification_code" COLSPAN="3" ALIGN="LEFT">classification_code</TD></TR>
       <TR><TD PORT="redact_code" COLSPAN="3" ALIGN="LEFT">redact_code</TD></TR>
+      <TR><TD PORT="view_id" COLSPAN="3" ALIGN="LEFT">view_id</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
     </TABLE>>
     URL="tables/../../cadastre/tables/cadastre_object.html"
@@ -303,6 +312,81 @@ digraph "largeRelationshipsDiagram" {
     URL="tables/../../system/tables/config_panel_launcher.html"
     tooltip="system.config_panel_launcher"
   ];
+  "dispute" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">dispute</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="application_id" COLSPAN="3" ALIGN="LEFT">application_id</TD></TR>
+      <TR><TD PORT="service_id" COLSPAN="3" ALIGN="LEFT">service_id</TD></TR>
+      <TR><TD PORT="nr" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">nr</TD></TR>
+      <TR><TD PORT="lodgement_date" COLSPAN="3" ALIGN="LEFT">lodgement_date</TD></TR>
+      <TR><TD PORT="completion_date" COLSPAN="3" ALIGN="LEFT">completion_date</TD></TR>
+      <TR><TD PORT="dispute_category_code" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">dispute_category_code</TD></TR>
+      <TR><TD PORT="dispute_type_code" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">dispute_type_code</TD></TR>
+      <TR><TD PORT="status_code" COLSPAN="3" ALIGN="LEFT">status_code</TD></TR>
+      <TR><TD PORT="rrr_id" COLSPAN="3" ALIGN="LEFT">rrr_id</TD></TR>
+      <TR><TD PORT="plot_location" COLSPAN="3" ALIGN="LEFT">plot_location</TD></TR>
+      <TR><TD PORT="cadastre_object_id" COLSPAN="3" ALIGN="LEFT">cadastre_object_id</TD></TR>
+      <TR><TD PORT="casetype" COLSPAN="3" ALIGN="LEFT">casetype</TD></TR>
+      <TR><TD PORT="action_required" COLSPAN="3" ALIGN="LEFT">action_required</TD></TR>
+      <TR><TD PORT="primary_respondent" COLSPAN="3" ALIGN="LEFT">primary_respondent</TD></TR>
+      <TR><TD PORT="rowidentifier" COLSPAN="3" BGCOLOR="#c0c0c0" ALIGN="LEFT">rowidentifier</TD></TR>
+      <TR><TD PORT="rowversion" COLSPAN="3" BGCOLOR="#c0c0c0" ALIGN="LEFT">rowversion</TD></TR>
+      <TR><TD PORT="change_action" COLSPAN="3" BGCOLOR="#c0c0c0" ALIGN="LEFT">change_action</TD></TR>
+      <TR><TD PORT="change_user" COLSPAN="3" BGCOLOR="#c0c0c0" ALIGN="LEFT">change_user</TD></TR>
+      <TR><TD PORT="change_time" COLSPAN="3" BGCOLOR="#c0c0c0" ALIGN="LEFT">change_time</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
+    </TABLE>>
+    URL="tables/dispute.html"
+    tooltip="dispute"
+  ];
+  "dispute_category" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">dispute_category</TD></TR>
+      <TR><TD PORT="code" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">code</TD></TR>
+      <TR><TD PORT="display_value" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">display_value</TD></TR>
+      <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
+      <TR><TD PORT="status" COLSPAN="3" ALIGN="LEFT">status</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
+    </TABLE>>
+    URL="tables/dispute_category.html"
+    tooltip="dispute_category"
+  ];
+  "dispute_comments" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">dispute_comments</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="dispute_nr" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">dispute_nr</TD></TR>
+      <TR><TD PORT="other_authorities_code" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">other_authorities_code</TD></TR>
+      <TR><TD PORT="update_date" COLSPAN="3" ALIGN="LEFT">update_date</TD></TR>
+      <TR><TD PORT="comments" COLSPAN="3" ALIGN="LEFT">comments</TD></TR>
+      <TR><TD PORT="updated_by" COLSPAN="3" ALIGN="LEFT">updated_by</TD></TR>
+      <TR><TD PORT="rowidentifier" COLSPAN="3" BGCOLOR="#c0c0c0" ALIGN="LEFT">rowidentifier</TD></TR>
+      <TR><TD PORT="rowversion" COLSPAN="3" BGCOLOR="#c0c0c0" ALIGN="LEFT">rowversion</TD></TR>
+      <TR><TD PORT="change_action" COLSPAN="3" BGCOLOR="#c0c0c0" ALIGN="LEFT">change_action</TD></TR>
+      <TR><TD PORT="change_user" COLSPAN="3" BGCOLOR="#c0c0c0" ALIGN="LEFT">change_user</TD></TR>
+      <TR><TD PORT="change_time" COLSPAN="3" BGCOLOR="#c0c0c0" ALIGN="LEFT">change_time</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/dispute_comments.html"
+    tooltip="dispute_comments"
+  ];
+  "dispute_type" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">dispute_type</TD></TR>
+      <TR><TD PORT="code" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">code</TD></TR>
+      <TR><TD PORT="display_value" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">display_value</TD></TR>
+      <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
+      <TR><TD PORT="status" COLSPAN="3" ALIGN="LEFT">status</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
+    </TABLE>>
+    URL="tables/dispute_type.html"
+    tooltip="dispute_type"
+  ];
   "mortgage_isbased_in_rrr" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -356,6 +440,19 @@ digraph "largeRelationshipsDiagram" {
     URL="tables/notation.html"
     tooltip="notation"
   ];
+  "other_authorities" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">other_authorities</TD></TR>
+      <TR><TD PORT="code" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">code</TD></TR>
+      <TR><TD PORT="display_value" COLSPAN="3" ALIGN="LEFT">display_value</TD></TR>
+      <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
+      <TR><TD PORT="status" COLSPAN="3" ALIGN="LEFT">status</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
+    </TABLE>>
+    URL="tables/other_authorities.html"
+    tooltip="other_authorities"
+  ];
   "party.party" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -385,6 +482,8 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="change_time" COLSPAN="3" ALIGN="LEFT">change_time</TD></TR>
       <TR><TD PORT="classification_code" COLSPAN="3" ALIGN="LEFT">classification_code</TD></TR>
       <TR><TD PORT="redact_code" COLSPAN="3" ALIGN="LEFT">redact_code</TD></TR>
+      <TR><TD PORT="state" COLSPAN="3" ALIGN="LEFT">state</TD></TR>
+      <TR><TD PORT="nationality" COLSPAN="3" ALIGN="LEFT">nationality</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
     URL="tables/../../party/tables/party.html"
@@ -548,7 +647,6 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
       <TR><TD PORT="maintype" COLSPAN="3" ALIGN="LEFT">maintype</TD></TR>
       <TR><TD PORT="la_nr" COLSPAN="3" ALIGN="LEFT">la_nr</TD></TR>
-      <TR><TD PORT="reference_nr" COLSPAN="3" ALIGN="LEFT">reference_nr</TD></TR>
       <TR><TD PORT="archive_id" COLSPAN="3" ALIGN="LEFT">archive_id</TD></TR>
       <TR><TD PORT="acceptance" COLSPAN="3" ALIGN="LEFT">acceptance</TD></TR>
       <TR><TD PORT="recordation" COLSPAN="3" ALIGN="LEFT">recordation</TD></TR>
@@ -571,6 +669,7 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="change_time" COLSPAN="3" ALIGN="LEFT">change_time</TD></TR>
       <TR><TD PORT="classification_code" COLSPAN="3" ALIGN="LEFT">classification_code</TD></TR>
       <TR><TD PORT="redact_code" COLSPAN="3" ALIGN="LEFT">redact_code</TD></TR>
+      <TR><TD PORT="reference_nr" COLSPAN="3" ALIGN="LEFT">reference_nr</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
     URL="tables/../../source/tables/source.html"
@@ -668,6 +767,10 @@ digraph "largeRelationshipsDiagram" {
   "opentenure.claim":"type_code":w -> "rrr_type":"code":e [arrowhead=none dir=back arrowtail=crowodot];
   "condition_for_rrr":"condition_code":w -> "condition_type":"code":e [arrowhead=none dir=back arrowtail=crowodot];
   "condition_for_rrr":"rrr_id":w -> "rrr":"id":e [arrowhead=none dir=back arrowtail=crowodot];
+  "dispute":"dispute_category_code":w -> "dispute_category":"code":e [arrowhead=none dir=back arrowtail=crowodot];
+  "dispute":"dispute_type_code":w -> "dispute_type":"code":e [arrowhead=none dir=back arrowtail=crowodot];
+  "dispute_comments":"dispute_nr":w -> "dispute":"nr":e [arrowhead=none dir=back arrowtail=teeodot];
+  "dispute_comments":"other_authorities_code":w -> "other_authorities":"code":e [arrowhead=none dir=back arrowtail=crowodot];
   "mortgage_isbased_in_rrr":"mortgage_id":w -> "rrr":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "mortgage_isbased_in_rrr":"rrr_id":w -> "rrr":"id":e [arrowhead=none dir=back arrowtail=crowodot];
   "notation":"ba_unit_id":w -> "ba_unit":"id":e [arrowhead=none dir=back arrowtail=crowodot];

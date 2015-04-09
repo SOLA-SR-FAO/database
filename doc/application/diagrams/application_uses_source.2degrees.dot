@@ -157,7 +157,6 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
       <TR><TD PORT="maintype" COLSPAN="3" ALIGN="LEFT">maintype</TD></TR>
       <TR><TD PORT="la_nr" COLSPAN="3" ALIGN="LEFT">la_nr</TD></TR>
-      <TR><TD PORT="reference_nr" COLSPAN="3" ALIGN="LEFT">reference_nr</TD></TR>
       <TR><TD PORT="archive_id" COLSPAN="3" ALIGN="LEFT">archive_id</TD></TR>
       <TR><TD PORT="acceptance" COLSPAN="3" ALIGN="LEFT">acceptance</TD></TR>
       <TR><TD PORT="recordation" COLSPAN="3" ALIGN="LEFT">recordation</TD></TR>
@@ -180,6 +179,7 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="change_time" COLSPAN="3" ALIGN="LEFT">change_time</TD></TR>
       <TR><TD PORT="classification_code" COLSPAN="3" ALIGN="LEFT">classification_code</TD></TR>
       <TR><TD PORT="redact_code" COLSPAN="3" ALIGN="LEFT">redact_code</TD></TR>
+      <TR><TD PORT="reference_nr" COLSPAN="3" ALIGN="LEFT">reference_nr</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
     </TABLE>>
     URL="../../source/tables/source.html"

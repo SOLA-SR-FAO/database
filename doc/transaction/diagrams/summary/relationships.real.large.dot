@@ -27,7 +27,6 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="type_code" COLSPAN="3" ALIGN="LEFT">type_code</TD></TR>
       <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="name_firstpart" COLSPAN="3" ALIGN="LEFT">name_firstpart</TD></TR>
-      <TR><TD PORT="name_lastpart" COLSPAN="3" ALIGN="LEFT">name_lastpart</TD></TR>
       <TR><TD PORT="creation_date" COLSPAN="3" ALIGN="LEFT">creation_date</TD></TR>
       <TR><TD PORT="expiration_date" COLSPAN="3" ALIGN="LEFT">expiration_date</TD></TR>
       <TR><TD PORT="status_code" COLSPAN="3" ALIGN="LEFT">status_code</TD></TR>
@@ -39,6 +38,15 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="change_time" COLSPAN="3" ALIGN="LEFT">change_time</TD></TR>
       <TR><TD PORT="classification_code" COLSPAN="3" ALIGN="LEFT">classification_code</TD></TR>
       <TR><TD PORT="redact_code" COLSPAN="3" ALIGN="LEFT">redact_code</TD></TR>
+      <TR><TD PORT="name_lastpart" COLSPAN="3" ALIGN="LEFT">name_lastpart</TD></TR>
+      <TR><TD PORT="is_not_developed" COLSPAN="3" ALIGN="LEFT">is_not_developed</TD></TR>
+      <TR><TD PORT="years_for_dev" COLSPAN="3" ALIGN="LEFT">years_for_dev</TD></TR>
+      <TR><TD PORT="value_to_imp" COLSPAN="3" ALIGN="LEFT">value_to_imp</TD></TR>
+      <TR><TD PORT="term" COLSPAN="3" ALIGN="LEFT">term</TD></TR>
+      <TR><TD PORT="land_use_code" COLSPAN="3" ALIGN="LEFT">land_use_code</TD></TR>
+      <TR><TD PORT="location" COLSPAN="3" ALIGN="LEFT">location</TD></TR>
+      <TR><TD PORT="floors_number" COLSPAN="3" ALIGN="LEFT">floors_number</TD></TR>
+      <TR><TD PORT="ground_rent" COLSPAN="3" ALIGN="LEFT">ground_rent</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="tables/../../administrative/tables/ba_unit.html"
@@ -102,6 +110,7 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="change_time" COLSPAN="3" ALIGN="LEFT">change_time</TD></TR>
       <TR><TD PORT="classification_code" COLSPAN="3" ALIGN="LEFT">classification_code</TD></TR>
       <TR><TD PORT="redact_code" COLSPAN="3" ALIGN="LEFT">redact_code</TD></TR>
+      <TR><TD PORT="view_id" COLSPAN="3" ALIGN="LEFT">view_id</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="tables/../../cadastre/tables/cadastre_object.html"
@@ -242,7 +251,6 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="id" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">id</TD></TR>
       <TR><TD PORT="maintype" COLSPAN="3" ALIGN="LEFT">maintype</TD></TR>
       <TR><TD PORT="la_nr" COLSPAN="3" ALIGN="LEFT">la_nr</TD></TR>
-      <TR><TD PORT="reference_nr" COLSPAN="3" ALIGN="LEFT">reference_nr</TD></TR>
       <TR><TD PORT="archive_id" COLSPAN="3" ALIGN="LEFT">archive_id</TD></TR>
       <TR><TD PORT="acceptance" COLSPAN="3" ALIGN="LEFT">acceptance</TD></TR>
       <TR><TD PORT="recordation" COLSPAN="3" ALIGN="LEFT">recordation</TD></TR>
@@ -265,6 +273,7 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="change_time" COLSPAN="3" ALIGN="LEFT">change_time</TD></TR>
       <TR><TD PORT="classification_code" COLSPAN="3" ALIGN="LEFT">classification_code</TD></TR>
       <TR><TD PORT="redact_code" COLSPAN="3" ALIGN="LEFT">redact_code</TD></TR>
+      <TR><TD PORT="reference_nr" COLSPAN="3" ALIGN="LEFT">reference_nr</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
     </TABLE>>
     URL="tables/../../source/tables/source.html"
