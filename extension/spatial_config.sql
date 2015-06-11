@@ -1,5 +1,4 @@
-﻿
------ Existing Layer Updates ----
+-- Existing Layer Updates ----
 -- Remove layers from core SOLA that are not used 
 --DELETE FROM system.config_map_layer WHERE "name" IN ('place-names', 'survey-controls', 'roads'); 
 

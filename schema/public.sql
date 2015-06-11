@@ -245,3 +245,37 @@ $$ LANGUAGE plpgsql;
 COMMENT ON FUNCTION public.clean_db_triggers(
 
 ) IS 'This function removes all triggers and their related functions in the database. It assumes that the trigger functions are found in the public schema.';
+
+
+-- Creates wrapper functions for those PostGIS 1.5
+ -- functions used by SOLA that have been deprecated
+ -- or removed from PostGIS 2.0
+
+
+    CREATE OR REPLACE FUNCTION public.st_3dmakebox (
+     geom1 public.geometry,
+     geom2 public.geometry
+    )
+    RETURNS public.box3d AS
+    '$libdir/postgis-2.0', 'BOX3D_construct'
+    LANGUAGE 'c'
+    IMMUTABLE
+    RETURNS NULL ON NULL INPUT
+    SECURITY INVOKER
+    COST 1;
+
+    COMMENT ON FUNCTION public.st_3dmakebox(geom1 public.geometry, geom2 public.geometry)
+    IS 'args: point3DLowLeftBottom, point3DUpRightTop - Creates a BOX3D defined by the given 3d point geometries.'; 
+
+
+
+
+ 
+ CREATE OR REPLACE FUNCTION public.ST_MakeBox3D(geometry, geometry) RETURNS 
+ box3d AS 'SELECT ST_3DMakeBox($1, $2)'
+ LANGUAGE 'sql' IMMUTABLE STRICT;
+
+ CREATE OR REPLACE FUNCTION public.SetSrid(geometry, integer) RETURNS 
+ geometry AS 'SELECT ST_SetSrid($1, $2)'
+ LANGUAGE 'sql' IMMUTABLE STRICT;
+
